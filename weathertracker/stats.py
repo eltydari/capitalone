@@ -14,12 +14,6 @@ METADATA_TEMPLATE = {
     "max": None,
     "count": 0,
 }
-
-
-class InvalidStatException(Exception):
-    def __init__(self, value):
-        super().__init__()
-        self.stat = value
         
         
 class InvalidMetricException(Exception):
