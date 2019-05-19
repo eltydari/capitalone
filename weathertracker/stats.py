@@ -21,7 +21,7 @@ class InvalidStatException(Exception):
         self.stat = value
         
         
-clas
+class Invalid 
 
 
 def validate_stats(stat_names):
