@@ -31,7 +31,8 @@ class InvalidMetricException(Exception):
 class Stats(object):
     def __init__(self, start_date, end_date):
         self.measurements = query_measurements(from_datetime, to_datetime)
-
+        
+    def 
 
 
 def validate_stats(stat_names):
