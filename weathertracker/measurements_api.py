@@ -35,7 +35,7 @@ class MeasurementsAPI(MethodView):
     # features/01-measurements/02-get-measurement.feature
     def get(self, timestamp):
 
-        timestamp =- 
+        timestamp = parse_timesta
 
         # TODO:
         abort(501)
