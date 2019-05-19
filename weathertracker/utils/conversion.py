@@ -20,3 +20,4 @@ def convert_metric(value):
         value = float(value)
     except ValueError:
         raise 
+    return va
