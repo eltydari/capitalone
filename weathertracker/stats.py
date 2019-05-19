@@ -28,7 +28,7 @@ def validate_stats(stat_names):
     return stat_names
 
 
-def generate_metadata(mmeasurements):
+def generate_metadata(metric_measurements):
     metadata = dict(METADATA_TEMPLATE)
     
     
