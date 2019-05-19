@@ -7,7 +7,6 @@ STATS = {
     "min": lambda metadata: metadata["min"],
     "max": lambda metadata: metadata["max"]
 }
-
 METADATA_TEMPLATE = {
     "sum": 0.0,
     "min": 0.0,
@@ -37,4 +36,4 @@ def generate_metadata(measurements):
 def get_stats(stats, metrics, from_datetime, to_datetime):
     validate_stats(stats)
     measurements = query_measurements(from_datetime, to_datetime)
-
+    
