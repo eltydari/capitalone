@@ -18,7 +18,7 @@ def parse_timestamp(timestamp):
     
 def expect(key, json_dict):
     try:
-        field = key.
+        field = json_di
 
 
 class MeasurementsAPI(MethodView):
