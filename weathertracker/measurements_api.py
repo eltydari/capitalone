@@ -22,7 +22,7 @@ class MeasurementsAPI(MethodView):
         try:
             timestamp = convert_to_datetime(timestamp)
         except DatetimeConversionException:
-            rai
+            raise BadReque
 
         # TODO:
         abort(501)
