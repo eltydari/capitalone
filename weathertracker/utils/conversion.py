@@ -4,8 +4,7 @@ from werkzeug.exceptions import BadRequest
 
 class DatetimeConversionException(BadRequest):
     def __init__(self, message):
-        super()
-        self.description = message
+        super().__init__(*args)
 
 
 def convert_to_datetime(value):
