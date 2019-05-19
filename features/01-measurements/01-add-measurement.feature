@@ -51,5 +51,3 @@ Feature: Add a measurement
       | "2015-09-01T16:00:00.000Z" | 15.0 |
     Then the response has a status code of 400
     
-  @new
-  Scenario:
