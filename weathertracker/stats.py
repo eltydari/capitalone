@@ -40,16 +40,16 @@ class Stats(object):
         metadata["count"] = len(self.measurements)
         for measurement in self.measurements:
             if validate_metric(metric_name, measurement):
-            metric = measurement.get_metric(metric_name)
-            metadata["sum"] += metric
-            if metadata["min"] is None:
-                metadata["min"] = metric
-            elif metric < metadata["min"]:
-                metadata["min"] = metric
-            if metadata["max"] is None:
-                metadata["max"] = metric
-            elif metric > metadata["max"]:
-                metadata["max"] = metric
+                metric = measurement.get_metric(metric_name)
+                metadata["sum"] += metric
+                if metadata["min"] is None:
+                    metadata["min"] = metric
+                elif metric < metadata["min"]:
+                    metadata["min"] = metric
+                if metadata["max"] is None:
+                    metadata["max"] = metric
+                elif metric > metadata["max"]:
+                    metadata["max"] = metric
         self._metadata[metric_name] = metadata
         
     def _aggregate_metrics(self, metrics):
