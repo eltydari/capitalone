@@ -13,7 +13,7 @@ class StatsAPI(MethodView):
     def get(self):
         stats = request.args.getlist("stat")
         if len(stats) == 0:
-            raise BadRequest("N")
+            raise BadRequest("No stats ")
         metrics = request.args.getlist("metric")
         from_datetime = request.args.get("fromDateTime")
         to_datetime = request.args.get("toDateTime")
