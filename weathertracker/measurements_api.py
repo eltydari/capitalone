@@ -28,6 +28,7 @@ class MeasurementsAPI(MethodView):
     def post(self):
         
         req = request.get_json()
+
         if not req.get('timestamp')
         
         timestamp = parse_timestamp(req_details[])
