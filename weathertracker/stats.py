@@ -28,7 +28,7 @@ def validate_stats(stat_names):
     for name in stat_names:
         if name in STATS:
             ret.append(name)
-    return 
+    return ret
         
         
 def validate_metric(metric_name, measurement):
@@ -70,7 +70,7 @@ class Stats(object):
         
 
 def get_stats(stats, metrics, from_datetime, to_datetime):
-    validate_stats(stats)
+    dvalidate_stats(stats)
     
     ret = {}
     stats_obj = Stats(metrics, from_datetime, to_datetime)
