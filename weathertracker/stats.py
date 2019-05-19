@@ -33,7 +33,8 @@ def validate_metric(metric_name, measurement):
         metric = measurement.get_metric(metric_name)
     except KeyError:
         raise InvalidMetricException(metric_name, measurement["timestamp"])
-    return measurement[metric]
+    return measurement[metr
+    ic]
         
 class Stats(object):
     def __init__(self, start_date, end_date):
