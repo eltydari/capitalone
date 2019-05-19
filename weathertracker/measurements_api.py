@@ -23,7 +23,6 @@ def process_measurement(pairs):
     for key, value in pairs.items():
         if key == "timestamp":
             continue
-        print(key)
         try:
             float(key)
             raise BadRequest(description = "Input metric key is a numeric: {}".format(key))
@@ -47,7 +46,7 @@ class MeasurementsAPI(MethodView):
         if not timestamp:
             raise BadRequest(description = "Input timestamp was expected but not provided.")
         parse_timestamp(timestamp) #Do validation
-        
+        print
         process_measurement(req)
         mdb.add_measurement(req)
         
