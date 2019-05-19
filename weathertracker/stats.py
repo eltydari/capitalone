@@ -25,7 +25,7 @@ class InvalidMetricException(Exception):
     def __init__(self, value, timestamp):
         super().__init__()
         self.metric = metric
-        self.timestamp = timesta
+        self.timestamp = timestamp
 
 
 def validate_stats(stat_names):
