@@ -28,6 +28,7 @@ class InvalidMetricException(Exception):
         self.timestamp = timestamp
 
 
+
 def validate_stats(stat_names):
     for name in stat_names:
         if name not in STATS:
