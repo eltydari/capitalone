@@ -10,6 +10,3 @@ def get_db():
         _db_instance = {}
     return _db_instance
 
-
-def teardown_db():
-    pass
