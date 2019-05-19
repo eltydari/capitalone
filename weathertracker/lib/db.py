@@ -9,6 +9,3 @@ def get_db():
     if _db_instance is None:
         _db_instance = {}
     return _db_instance
-
-class Database(object):
-    pass
