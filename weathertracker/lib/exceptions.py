@@ -1,3 +1,3 @@
 """
-HttpExceptions
+HTTP Exceptions
 """
