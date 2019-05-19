@@ -26,7 +26,6 @@ def validate_stats(stat_names):
         
 def validate_metric(metric_name, measurement):
     return bool(measurement.get_metric(metric_name))
-    
 
 def validate_metadata(data):
     
