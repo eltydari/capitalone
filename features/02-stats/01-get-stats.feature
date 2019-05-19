@@ -103,5 +103,4 @@ Feature: Get measurement statistics
       | metric       | precipitation            |
       | fromDateTime | 2015-09-02T16:00:00.000Z |
       | toDateTime   | 2015-09-02T17:00:00.000Z |
-    
-    And the response body is an empty array
+    Then the response has a status code of 400
