@@ -38,7 +38,7 @@ def validate_stats(stat_names):
 def validate_metric(metric, measurement):
     if measurement.get(metric) is None:
         raise InvalidMetricException(metric, measurement["timestamp"])
-    return measurement[metric_name]
+    return measurement[metric]
 
 
 def generate_metadata(metric, measurements):
