@@ -29,6 +29,7 @@ Feature: Get measurement statistics
       | "temperature" | "max"     | 27.5  |
       | "temperature" | "average" | 27.3  |
 
+
   Scenario: Get stats for a sparsely reported metric
      # GET /stats?<params...>
     When I get stats with parameters:
