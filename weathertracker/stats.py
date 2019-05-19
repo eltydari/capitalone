@@ -1,8 +1,6 @@
 from collections import OrderedDict
 from werkzeug.exceptions import abort
 from weathertracker.measurement_store import query_measurements
-
-
 # Registered metrics will use metadata generated within get_stats
 STATS = {
     "average": lambda metadata: metadata["sum"]/metadata["count"],
