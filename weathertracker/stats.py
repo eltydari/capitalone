@@ -73,6 +73,7 @@ class Stats(object):
                 ret.append(stat)
         return ret
 
+
 def get_stats(stats, metrics, from_datetime, to_datetime):
     stats = validate_stats(stats)
     stats_obj = Stats(metrics, from_datetime, to_datetime)
