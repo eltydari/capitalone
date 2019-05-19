@@ -3,7 +3,7 @@ Simple dictionary db interface that lives in process memory.
 
 Can be extended in the future to accept more types of dbs.
 
-Note 
+Note: I would ha
 """
 
 _db_instance = None
