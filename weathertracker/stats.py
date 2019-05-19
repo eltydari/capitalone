@@ -28,7 +28,8 @@ class InvalidMetricException(Exception):
         self.timestamp = timestamp
         
         
-class Stats(objec)
+class Stats(object):
+    de
 
 
 def validate_stats(stat_names):
