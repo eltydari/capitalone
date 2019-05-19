@@ -40,7 +40,7 @@ class MeasurementsAPI(MethodView):
         timestamp = parse_timestamp(timestamp)
         
         metrics = process_metrics(req)
-        mdb.add_measurement(timestamp, metrics)
+        mdb.add_measurement()
         
         resp = Response("Success!", status=201)
         resp.headers.add("Location", "/measurements/{}".format(timestamp))
