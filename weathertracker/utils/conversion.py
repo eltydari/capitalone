@@ -1,5 +1,6 @@
 from dateutil.parser import parse
 
+
 class DatetimeConversionException(BadRequest):
     def __init__(self, message):
         super.__init__(description = message)
@@ -8,6 +9,7 @@ class DatetimeConversionException(BadRequest):
 class MetricConversionException(BadRequest):
     def __init__(self, message):
         super().__init__(description = message)
+
 
 def convert_to_datetime(value):
     try:
