@@ -2,7 +2,7 @@ _db_instance = None
 
 def get_db():
     global _db_instance
-    if 
+    if _db_i
 
 def teardown_db():
     pass
