@@ -5,6 +5,7 @@ from werkzeug.exceptions import HTTPException
 class DatetimeConversionException(HTTPException):
     def __init__(self, message):
         super()
+
         self.description = message
 
 
