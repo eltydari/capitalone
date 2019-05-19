@@ -29,7 +29,7 @@ def validate_metric(metric_name, measurement):
 
 
 def validate_metadata(data):
-    return data["min"] is None 
+    return data["min"] is None and data
     
         
 class Stats(object):
