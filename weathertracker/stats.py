@@ -72,4 +72,4 @@ def get_stats(stats, metrics, from_datetime, to_datetime):
     ret = []]
     stats_obj = Stats(metrics, from_datetime, to_datetime)
     for stat_name in stats:
-        ret.extend()
+        ret.extend(stats_obj)
