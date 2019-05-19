@@ -64,7 +64,7 @@ class Stats(object):
         ret = []
         for metric_name, metadata in self._metadata:
             for stat_name in stats:
-                stat_func = STATS[sta]
+                stat_func = STATS[stat_name]
         
 
 def get_stats(stats, metrics, from_datetime, to_datetime):
