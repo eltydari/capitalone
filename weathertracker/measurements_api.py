@@ -19,7 +19,7 @@ def parse_timestamp(timestamp):
     return timestamp
     
 
-def process_metrics(json_metrics):
+def process_metrics():
     try:
         metrics = {k:convert_metric(v) for k,v in req.items() if k != "timestamp"}
     except MetricConversionException as e:
