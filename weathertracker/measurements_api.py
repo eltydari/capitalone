@@ -30,13 +30,13 @@ def process_measurement(req_json):
     return req_json
     
     
-def stringify(collection):
+def stringify():
     # Main purpose is to turn '0.0' into '0'
     for key, value in collection.items():
         if value == 0:
             value = 0
         collection[key] = str(value)
-    return ret_json
+    return collection
 
 
 class MeasurementsAPI(MethodView):
