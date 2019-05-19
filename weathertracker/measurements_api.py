@@ -32,7 +32,7 @@ class MeasurementsAPI(MethodView):
         timestamp = parse_timestamp(timestamp)
         
         try:
-
+            for 
             metrics = {k:convert_metric(v) for k,v in req.items() if k != "timestamp"}
         except MetricConversionException:
             raise BadRequest(description = "Metric is not a float: \"{}\" with value \"{}\"".format(k, v))
