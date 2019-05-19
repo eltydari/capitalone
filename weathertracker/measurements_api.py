@@ -55,7 +55,7 @@ class MeasurementsAPI(MethodView):
         timestamp = parse_timestamp(timestamp)
         
         try:
-            measurement = mget_measurement(timestamp)
+            measurement = mdb.get_measurement(timestamp)
         except mdb.EntryNotFoundException:
             raise NotFound("Entry was not found in database.")
             
