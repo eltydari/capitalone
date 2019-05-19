@@ -29,12 +29,6 @@ def validate_metrics(metric_names):
 
 
 def generate_metadata(measurements):
-    metadata = {
-        "sum": 0.0,
-        "min": 0.0,
-        "max": 0.0,
-        "count" 
-    }
 
 
 def get_stats(stats, metrics, from_datetime, to_datetime):
