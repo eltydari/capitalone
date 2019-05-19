@@ -16,7 +16,7 @@ METADATA_TEMPLATE = {
 }
 
 
-class InvalidMetricException(Exception):
+class InvalidSException(Exception):
     def __init__(self, value):
         super().__init__()
         self.metric = value
