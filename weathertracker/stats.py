@@ -8,7 +8,7 @@ STATS = {
     "max": lambda metadata: metadata["max"]
 }
 METADATA_TEMPLATE = {
-    "sum": ,
+    "sum": 0.0,
     "min": 0.0,
     "max": 0.0,
     "count": 0,
