@@ -4,7 +4,6 @@ class DatetimeConversionException(BadRequest):
     def __init__(self, message):
         super.__init__(description = message)
 
-
 class MetricConversionException(BadRequest):
     def __init__(self, message):
         super().__init__(description = message)
