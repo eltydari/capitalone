@@ -32,7 +32,7 @@ def generate_metadata(metric, measurements):
     metadata = dict(METADATA_TEMPLATE)
     metadata["count"] = len(measurements)
     for measurement in measurements:
-        m
+        metrics = 
     
 
 def get_stats(stats, metrics, from_datetime, to_datetime):
