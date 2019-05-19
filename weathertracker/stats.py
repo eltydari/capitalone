@@ -63,4 +63,4 @@ def generate_metadata(metric_name, measurements):
 def get_stats(stats, metrics, from_datetime, to_datetime):
     validate_stats(stats)
     measurements = query_measurements(from_datetime, to_datetime)
-    for metric_
+    for metric_name in metrics
