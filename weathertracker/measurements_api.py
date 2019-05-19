@@ -68,5 +68,4 @@ class MeasurementsAPI(MethodView):
         except mdb.EntryNotFoundException as e:
             raise NotFound("Entry was not found in database: {}".format(e.entry))
             
-        stringify(measurement)
         return jsonify(measurement)
