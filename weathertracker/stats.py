@@ -11,7 +11,7 @@ METRICS = {
 
 def validate_metrics(metric_names):
     for name in metric_names:
-        if name not
+        if name not in 
 
 
 def generate_metadata(measurements):
