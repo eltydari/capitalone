@@ -72,7 +72,7 @@ class Stats(object):
             for stat_name in stats:
                 stat_func = STATS[stat_name]
                 if stat_name == "average":
-                    print()
+                    print(s)
                 stat = {
                     "metric": metric_name,
                     "stat": stat_name,
