@@ -21,7 +21,7 @@ def parse_timestamp(timestamp):
 
 def process_metrics(metrics):
     try:
-            metrics = {k:convert_metric(v) for k,v in req.items() if k != "timestamp"}
+        metrics = {k:convert_metric(v) for k,v in req.items() if k != "timestamp"}
         except MetricConversionException as e:
             raise BadRequest(description = "Input metric value is not a float: {}".format(e.value))
 
