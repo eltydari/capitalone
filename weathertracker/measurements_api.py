@@ -42,7 +42,7 @@ class MeasurementsAPI(MethodView):
             raise BadRequest(description = "Input timestamp was expected but not provided.")
         timestamp = parse_timestamp(timestamp)
         
-        process
+        process_measurement()
         mdb.add_measurement(req)
         
         resp = Response("Success!", status=201)
