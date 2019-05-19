@@ -27,4 +27,5 @@ Feature: Get a measurement
     Then the response has a status code of 404
     
   Scenario: Get a measurement without content
-    Given 
+    Given I have submitted new measurements as follows:
+    
