@@ -32,7 +32,7 @@ class MeasurementsAPI(MethodView):
         timestamp = parse_timestamp(timestamp)
         
         try:
-        metrics = {k:convert_metric(v) for k,v in req.items() if k != "timestamp"}
+            metrics = {k:convert_metric(v) for k,v in req.items() if k != "timestamp"}
         mdb.add_measurement(timestamp, metrics)
         
         resp = Response("Success!", status=201)
