@@ -31,9 +31,24 @@ class InvalidMetricException(Exception):
 class Stats(object):
     def __init__(self, start_date, end_date):
         self.measurements = query_measurements(from_datetime, to_datetime)
-        self._metadata = _generate_metadata()
+        self._metadata = {}
         
-    def 
+    def _generate_metadata(self, metric_name):
+        metadata = dict(METADATA_TEMPLATE)
+        metadata["count"] = len(measurements)
+        for measurement in measurements:
+            metric = validate_metric(metric_name, measurement)
+            metadata["sum"] += metric
+            if metadata["min"] is None:
+                metadata["min"] = metric
+            elif metric < metadata["min"]:
+                metadata["min"] = metric
+            if metadata["max"] is None:
+                metadata["max"] = metric
+            elif metric > metadata["max"]:
+                metadata["max"] = metric
+         return metadata
+        
 
 
 def validate_stats(stat_names):
@@ -52,20 +67,6 @@ def validate_metric(metric_name, measurement):
 
 
 def generate_metadata(metric_name, measurements):
-    metadata = dict(METADATA_TEMPLATE)
-    metadata["count"] = len(measurements)
-    for measurement in measurements:
-        metric = validate_metric(metric_name, measurement)
-        metadata["sum"] += metric
-        if metadata["min"] is None:
-            metadata["min"] = metric
-        elif metric < metadata["min"]:
-            metadata["min"] = metric
-        if metadata["max"] is None:
-            metadata["max"] = metric
-        elif metric > metadata["max"]:
-            metadata["max"] = metric
-     return metadata
      
 
 def get_stats(stats, metrics, from_datetime, to_datetime):
