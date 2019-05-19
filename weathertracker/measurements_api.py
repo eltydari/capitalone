@@ -34,7 +34,6 @@ class MeasurementsAPI(MethodView):
         metrics = {k:convert_metric(v) for k,v in req.items() if k != "timestamp"}
         mdb.add_measurement(timestamp, metrics)
         
-        headers = 
         return Response("Success!", status=201, )
 
     # features/01-measurements/02-get-measurement.feature
