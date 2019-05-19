@@ -65,6 +65,7 @@ class Stats(object):
         self._metadata[metric_name] = metadata
         
     def _aggregate_metrics(self, metrics):
+        self._metadata = {}
         for metric_name in metrics:
             self._generate_metadata(metric_name)
         
