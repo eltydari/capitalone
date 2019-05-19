@@ -56,4 +56,4 @@ Feature: Add a measurement
     # POST /measurements
       | timestamp                  | temperature | temperature |
       | "2015-09-01T16:00:00.000Z" | 27.1        | 16.7        |
-    
+    Then the response has a status code of 400
