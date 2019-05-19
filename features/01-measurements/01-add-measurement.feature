@@ -19,8 +19,8 @@ Feature: Add a measurement
     Then the response has a status code of 201
     And the Location header has the path "/measurements/2015-09-01T16:00:00.000Z"
     
-  @skip
-  Scenario: dd a measurement with nonnumeric values
+  @new
+  Scenario: Add a measurement with nonnumeric values
     # POST /measurements
     When I submit a new measurement as follows:
       | timestamp                  | temperature    | dewPoint | precipitation |
