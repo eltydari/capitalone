@@ -10,7 +10,7 @@ class EntryNotFoundException(Exception):
 def add_measurement(measurement):
     dbstore = db.get_db()
     date = measurement["timestamp"]
-    metrics = {k:v for k,v in }
+    metrics = {k:v for k,v in measru}
     dbstore[date] = Measurement(date, metrics)
 
 
