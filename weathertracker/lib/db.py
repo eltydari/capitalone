@@ -1,3 +1,3 @@
 _db_instance = None
 
-def get_db()
+def get_db():
