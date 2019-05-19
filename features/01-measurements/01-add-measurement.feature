@@ -28,6 +28,5 @@ Feature: Add a measurement
   Scenario: Cannot add a measurement with arbitrary arithmetic
     # POST /measurements
     When I submit a new measurement as follows:
-      | temperature | dewPoint | precipitation |
-      | 27.1        | 20       | 0             |
+
     Then the response has a status code of 400
