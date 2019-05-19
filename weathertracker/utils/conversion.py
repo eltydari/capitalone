@@ -5,8 +5,8 @@ from werkzeug.exceptions import BadRequest
 class DatetimeConversionException(Exception):
     pass
 
-class MetricConversionException():
-    pass
+class MetricConversionException(BadRequest):
+    
 
 
 def convert_to_datetime(value):
