@@ -23,7 +23,7 @@ class InvalidMetricException(Exception):
 
 
 def validate_stats(stat_names):
-    for name in metric_names:
+    for name in _names:
         if name not in METRICS:
             
 
