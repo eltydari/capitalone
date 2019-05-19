@@ -40,6 +40,7 @@ def validate_metric(metric_name, measurement):
         raise InvalidMetricException(metric_name, measurement["timestamp"])
 
 
+
 def generate_metadata(metric, measurements):
     metadata = dict(METADATA_TEMPLATE)
     metadata["count"] = len(measurements)
