@@ -30,7 +30,7 @@ def process_measurement(req_json):
     return req_json
     
     
-def stringify(pai):
+def stringify(pairs):
     # Main purpose is to turn '0.0' into '0'
     for key, value in collection.items():
         if value == 0:
