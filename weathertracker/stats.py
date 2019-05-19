@@ -27,7 +27,7 @@ def validate_stats(stat_names):
     ret = []
     for name in stat_names:
         if name in STATS:
-            raise InvalidStatException(name)
+            
     return stat_names
         
         
