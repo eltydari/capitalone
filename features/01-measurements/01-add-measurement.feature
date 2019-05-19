@@ -52,5 +52,4 @@ Feature: Add a measurement
     Then the response has a status code of 400
     
   @new
-  Scenario: Cannot add two of the same measurement
-    
+  Scenario: Cannot add two of the same measur
