@@ -31,7 +31,7 @@ class MeasurementsAPI(MethodView):
         
         timestamp = req.get('timestamp')
         if not timestamp:
-            raise BadRequest(description = "Timestamp ")
+            raise BadRequest(description = "Timestamp was exp")
         
         timestamp = parse_timestamp(req_details[])
         
