@@ -43,7 +43,7 @@ class Stats(object):
         
     def _generate_metadata(self, metric_name):
         metadata = dict(METADATA_TEMPLATE)
-        metadata["count"] = len(measurements)
+        metadata["count"] = len(self.measurements)
         for measurement in self.measurements:
             metric = validate_metric(metric_name, measurement)
             metadata["sum"] += metric
