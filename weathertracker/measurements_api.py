@@ -40,7 +40,7 @@ class MeasurementsAPI(MethodView):
         timestamp_str = req.get("timestamp")
         if not timestamp_str:
             raise BadRequest(description = "Input timestamp was expected but not provided.")
-        req.timestamp = parse_timestamp(timestamp_str)
+        reqtimestamp = parse_timestamp(timestamp_str)
         
         process_measurement(req)
         mdb.add_measurement(req)
