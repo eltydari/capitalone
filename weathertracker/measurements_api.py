@@ -36,6 +36,7 @@ def stringify(ret_json):
         if value == 0:
             value = 0
         ret_json[key] = str(value)
+    
 
 
 class MeasurementsAPI(MethodView):
