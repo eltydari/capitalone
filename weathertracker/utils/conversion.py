@@ -5,7 +5,7 @@ from werkzeug.exceptions import BadRequest
 class DatetimeConversionException(Exception):
     pass
 
-class MetricConversionException(Exception):
+class MetricConversionException():
     pass
 
 
