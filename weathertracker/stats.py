@@ -58,12 +58,6 @@ def validate_stats(stat_names):
     return stat_names
     
     
-def validate_metric(metric_name, measurement):
-    try:
-        metric = measurement.get_metric(metric_name)
-    except KeyError:
-        raise InvalidMetricException(metric_name, measurement["timestamp"])
-    return measurement[metric]
 
 
 def generate_metadata(metric_name, measurements):
