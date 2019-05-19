@@ -1,7 +1,7 @@
 from dateutil.parser import parse
 
 
-class DatetimeConversionException(BadRequest):
+class DatetimeConversionException():
     def __init__(self, value):
         super.__init__(description = message)
 
