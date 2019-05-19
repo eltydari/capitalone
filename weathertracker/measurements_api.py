@@ -59,5 +59,4 @@ class MeasurementsAPI(MethodView):
         except mdb.EntryNotFoundException:
             raise NotFound("Entry was not found in database.")
             
-        # TODO:
-        abort(501)
+        
