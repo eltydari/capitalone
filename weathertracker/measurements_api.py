@@ -24,10 +24,10 @@ def process_measurement(pairs):
         for key, value in pairs.items():
             if key == "timestamp":
                 continue
-            req_json[key] = convert_metric(value)
+            pairs[key] = convert_metric(value)
     except MetricConversionException as e:
         raise BadRequest(description = "Input metric value is not a float: {}".format(e.value))
-    return req_json
+    return pairs
     
     
 def stringify(pairs):
