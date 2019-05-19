@@ -1,7 +1,7 @@
 """
 Simple dictionary db interface that lives in process memory.
 
-Can be 
+Can be e
 """
 
 _db_instance = None
