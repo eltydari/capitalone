@@ -17,9 +17,9 @@ def get_measurement(date):
     measurement = dbstore.get(date)
     if not measurement:
         raise EntryNotFoundException
-    metrics = measurement.metrics
+     = measurement.metrics
     metrics['timestamp'] = measurment.timestamp
-    return 
+    return metrics
 
 
 def query_measurements(start_date, end_date):
