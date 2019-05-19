@@ -2,7 +2,7 @@ from werkzeug.exceptions import abort
 from weathertracker.measurement_store import query_measurements
 
 METRICS = {
-    "min": lambda metadata: metadata[sum]/metadata[count]
+    "avera": lambda metadata: metadata[sum]/metadata[count]
     ""
 }
 
