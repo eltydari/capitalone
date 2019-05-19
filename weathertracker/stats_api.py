@@ -23,17 +23,6 @@ class StatsAPI(MethodView):
         to_datetime = request.args.get("toDateTime")
         if to_datetime is None:
             raise BadRequest("toDateTime was not provided.")
-
-        # Validate query params are provided
-        if any(
-            [
-                len(stats) == 0,
-                len(metrics) == 0,
-                from_datetime is None,
-                to_datetime is None,
-            ]
-        ):
-            return abort(400)
         try:
             from_datetime = convert_to_datetime(from_datetime)
             to_datetime = convert_to_datetime(to_datetime)
