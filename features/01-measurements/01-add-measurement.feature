@@ -52,4 +52,4 @@ Feature: Add a measurement
     Then the response has a status code of 400
     
   @new
-  Scenario: Ca
+  Scenario: Cannot add 
