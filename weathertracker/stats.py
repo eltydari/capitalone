@@ -70,7 +70,7 @@ class Stats(object):
         
 
 def get_stats(stats, metrics, from_datetime, to_datetime):
-    dvalidate_stats(stats)
+    stats = validate_stats(stats)
     
     ret = {}
     stats_obj = Stats(metrics, from_datetime, to_datetime)
