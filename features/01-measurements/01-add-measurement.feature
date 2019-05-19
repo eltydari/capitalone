@@ -36,7 +36,7 @@ Feature: Add a measurement
     Then the response has a status code of 400
 
   @new
-  Scenario: Cannot add a measurement with arbitrary arithmetic
+  Scenario: Cannot add a measurement with arbitrary arithmetic 
     # POST /measurements
     When I submit a new measurement as follows:
       | timestamp                  | temperature | dewPoint | precipitation |
