@@ -20,7 +20,7 @@ Feature: Get a measurement
     And the response body is:
       | timestamp                  | temperature | dewPoint | precipitation |
       | "2015-09-01T16:20:00.000Z" | 27.5        | 17.1     | 0             |
-
+  @skip
   Scenario: Get a measurement that does not exist
     # GET /measurements/2015-09-01T16:50:00.000Z
     When I get a measurement for "2015-09-01T16:50:00.000Z"
