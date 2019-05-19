@@ -27,7 +27,7 @@ def process_measurement(req_json):
             req_json[key] = convert_metric(value)
     except MetricConversionException as e:
         raise BadRequest(description = "Input metric value is not a float: {}".format(e.value))
-    return ret
+    return re
 
 
 class MeasurementsAPI(MethodView):
