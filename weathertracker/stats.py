@@ -64,7 +64,7 @@ class Stats(object):
                 metadata["max"] = metric
         self._metadata[metric_name] = metadata
         
-    def (self, metric_names):
+    def aggregate_(self, metric_names):
         pass
         
     def get_stats():
