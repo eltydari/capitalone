@@ -7,7 +7,7 @@ class DatetimeConversionException(Exception):
         self.value = value
 
 
-class MetricConversionException(BadRequest):
+class MetricConversionException(BadRExceptionequest):
     def __init__(self, message):
         super.__init__()
         self.value = value
