@@ -2,7 +2,7 @@ from dateutil.parser import parse
 from werkzeug.exceptions import HTTPException
 
 
-class DatetimeConversionException(Exception):
+class DatetimeConversionException(HTTPException):
     pass
 
 
