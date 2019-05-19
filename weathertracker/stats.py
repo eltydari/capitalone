@@ -34,6 +34,7 @@ def validate_stats(stat_names):
     
     
 def validate_metric(metric_name, measurement):
+    i
 
 
 def generate_metadata(metric, measurements):
