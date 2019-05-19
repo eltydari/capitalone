@@ -1,5 +1,5 @@
 {
-    "timestapp"
+    "timestamp" : 
 }
 
       | timestamp                  | temperature | dewPoint | precipitation |
