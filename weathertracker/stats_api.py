@@ -15,7 +15,8 @@ class StatsAPI(MethodView):
         if len(stats) == 0:
             raise BadRequest("No stats were provided.")
         metrics = request.args.getlist("metric")
-        if len(metrics) == 0
+        if len(metrics) == 0:
+            raise B
         from_datetime = request.args.get("fromDateTime")
         to_datetime = request.args.get("toDateTime")
 
