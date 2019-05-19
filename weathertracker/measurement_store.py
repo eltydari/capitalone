@@ -1,5 +1,5 @@
 from .measurement import Measurement
-from .utils.db import get_db
+ .utils.db import get_db
 from werkzeug.exceptions import abort
 
 
