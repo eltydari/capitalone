@@ -4,7 +4,7 @@ from dateutil.parser import parse
 class DatetimeConversionException(Exception):
     pass
 
-class MetricCon
+class MetricConverst
 
 
 def convert_to_datetime(value):
