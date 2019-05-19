@@ -30,4 +30,5 @@ def query_measurements(start_date, end_date):
     dbstore = db.get_db()
     ret = []
     for key, value in dbstore.items():
-        if start_date <= key < end_
+        if start_date <= key < end_date:
+            
