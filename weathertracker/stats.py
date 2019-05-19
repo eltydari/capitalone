@@ -63,7 +63,6 @@ class Stats(object):
     def get_stats(self, stats):
         ret = []
         for metric_name, metadata in self._metadata.items():
-            print(stats)
             for stat_name in stats:
                 stat_func = STATS[stat_name]
                 stat = {
