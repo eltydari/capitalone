@@ -19,7 +19,7 @@ class MeasurementsAPI(MethodView):
         try:
             timestamp = convert_to_datetime(timestamp)
         except DatetimeConversionException:
-            raise 
+            raise BadRequest(description = "Timestamp input is invalid: {}".format(timestamp))
             
         
         return jsonify(message="Success!")
