@@ -9,7 +9,7 @@ from weathertracker.utils.conversion import (
 )
 
 
-def parseDate
+def parse
 
 
 class MeasurementsAPI(MethodView):
