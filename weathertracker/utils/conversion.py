@@ -1,10 +1,8 @@
 from dateutil.parser import parse
-from werkzeug.exceptions import HTTPException
 
 
-class DatetimeConversionException(HTTPException):
-    code = 400
-
+class DatetimeConversionException(Exception):
+    pass
 
 
 def convert_to_datetime(value):
