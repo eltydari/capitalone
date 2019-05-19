@@ -15,7 +15,7 @@ def convert_to_datetime(value):
     return value
 
 
-def convert_(value):
+def convert_metric(value):
     try:
         value = float(value)
     except ValueError:
