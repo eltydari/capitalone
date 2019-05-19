@@ -12,9 +12,7 @@ class DatetimeConversionException(ConversionException):
 
 
 class MetricConversionException(Exception):
-    def __init__(self, message):
-        super.__init__()
-        self.value = val
+    pass
 
 
 def convert_to_datetime(value):
