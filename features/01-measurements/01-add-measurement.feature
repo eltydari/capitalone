@@ -29,5 +29,5 @@ Feature: Add a measurement
     # POST /measurements
     When I submit a new measurement as follows:
       | timestamp                  | temperature    | dewPoint | precipitation |
-      | "2015-09-01T16:00:00.000Z" | "15.0+12.000Z" | 16.7     | 0             |
+      | "2015-09-01T16:00:00.000Z" | "15.0+12.0" | 16.7     | 0             |
     Then the response has a status code of 400
