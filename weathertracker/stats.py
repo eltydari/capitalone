@@ -10,7 +10,7 @@ STATS = {
 METADATA_TEMPLATE = {
     "sum": 0.0,
     "min": None,
-    "max": Non,
+    "max": None,
     "count": 0,
 }
 
