@@ -18,7 +18,7 @@ class MeasurementsAPI(MethodView):
         
         try:
             timestamp = convert_to_datetime(timestamp)
-        er
+        except Date
             
         
         return jsonify(message="Success!")
