@@ -3,7 +3,7 @@ from werkzeug.exceptions import BadRequest
 
 
 class DatetimeConversionException(BadRequest):
-    d
+    def __init__
 
 
 def convert_to_datetime(value):
