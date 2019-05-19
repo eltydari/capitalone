@@ -50,4 +50,3 @@ Feature: Add a measurement
       | timestamp                  | 12.6 |
       | "2015-09-01T16:00:00.000Z" | 15.0 |
     Then the response has a status code of 400
-    
