@@ -13,7 +13,7 @@ def parse_timestamp(timestamp):
     try:
         timestamp = convert_to_datetime(timestamp)
     except DatetimeConversionException:
-        raise Ba
+        raise BadRequest()
 
 
 class MeasurementsAPI(MethodView):
