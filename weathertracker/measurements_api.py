@@ -28,7 +28,7 @@ class MeasurementsAPI(MethodView):
         
         timestamp = req.get("timestamp")
         if not timestamp:
-            raise BadRequest(description = "Timestamp was expected in the post request but not provided")
+            raise BadRequest(description = "Timestamp was expected but not provided")
         timestamp = parse_timestamp(timestamp)
         
         try:
