@@ -4,7 +4,7 @@ from   werkzeug.exceptions import abort
 
 
 def add_measurement(date, measurement):
-    
+    dbstore = 
 
 
 def get_measurement(date):
