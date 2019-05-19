@@ -13,7 +13,7 @@ class MeasurementsAPI(MethodView):
 
     # features/01-measurements/01-add-measurement.feature
     def post(self):
-        # TODO:
+        
         print(request.get_json())
         return jsonify(message="Success!")
 
