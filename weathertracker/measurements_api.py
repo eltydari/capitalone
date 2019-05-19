@@ -57,6 +57,6 @@ class MeasurementsAPI(MethodView):
         try:
             metrics = get_measurement(timestamp)
         except mdb.EntryNotFoundException:
-            raise NotFound(description = "E")
+            raise NotFound(description = "Ent")
         # TODO:
         abort(501)
