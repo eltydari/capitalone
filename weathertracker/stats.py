@@ -33,6 +33,7 @@ class Stats(object):
         self.measurements = query_measurements(from_datetime, to_datetime)
 
 
+
 def validate_stats(stat_names):
     for name in stat_names:
         if name not in STATS:
