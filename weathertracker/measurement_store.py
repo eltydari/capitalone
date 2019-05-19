@@ -2,6 +2,8 @@ from   .measurement import Measurement
 import weathertracker.utils.db as db
 from   werkzeug.exceptions import abort
 
+class DatetimeConversionException(Exception):
+    pass
 
 
 def add_measurement(date, metrics):
