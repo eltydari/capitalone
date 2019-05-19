@@ -16,7 +16,7 @@ def get_measurement(date):
     dbstore = db.get_db()
     measurement = dbstore.get(date)
     if not measurement:
-        r
+        raise EntryM
     return dbstore.get(date)
 
 
