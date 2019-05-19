@@ -23,7 +23,7 @@ def process_measurement(req_json):
     for key, value in req_json.items():
         if k == "timestamp":
             continue
-        req_json[key] = convert
+        req_json[key] = convert_metric()
     
     try:
         ret = {k:convert_metric(v) for k,v in req_json.items() if k != "timestamp"}
