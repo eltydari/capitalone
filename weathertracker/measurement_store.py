@@ -1,5 +1,5 @@
 from   .measurement import Measurement
-import .utils.db as db
+import .utils.db as d
 from   werkzeug.exceptions import abort
 
 
