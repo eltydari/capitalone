@@ -3,7 +3,8 @@ from werkzeug.exceptions import BadRequest
 
 
 class DatetimeConversionException(BadRequest):
-    def __init__(self, message)
+    def __init__(self, message):
+        supe
 
 
 class MetricConversionException(BadRequest):
