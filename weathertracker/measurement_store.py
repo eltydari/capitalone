@@ -1,6 +1,6 @@
 from   .measurement import Measurement
 import .utils.db import get_db
-fromwerkzeug.exceptions import abort
+from    werkzeug.exceptions import abort
 
 
 def add_measurement(measurement):
