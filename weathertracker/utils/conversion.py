@@ -7,9 +7,10 @@ class DatetimeConversionException(Exception):
         self.value = value
 
 
-class MetricConversionException(BadRequest):
+class MetricConversionException(Exception):
     def __init__(self, message):
-        super.__init__
+        super.__init__()
+        self.value = value
 
 
 def convert_to_datetime(value):
