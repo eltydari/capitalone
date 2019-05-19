@@ -21,5 +21,5 @@ def convert_metric(value):
     try:
         value = float(value)
     except ValueError:
-        raise MetricConversionException(value)
+        raise MetricConversionException()
     return value
