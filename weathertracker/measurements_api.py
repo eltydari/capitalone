@@ -34,7 +34,7 @@ class MeasurementsAPI(MethodView):
         timestamp = parse_timestamp(timestamp)
         
         metrics = {k:v for k,v in req.iteritems() if k != "timestamp"}
-        add_measurement(timestamp, {})
+        add_measurement(timestamp, )
         for key, value in req.iteritems():
             if key == 'timestamp':
             
