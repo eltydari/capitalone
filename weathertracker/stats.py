@@ -71,7 +71,7 @@ class Stats(object):
         for metric_name, metadata in self._metadata.items():
             for stat_name in stats:
                 stat_func = STATS[stat_name]
-                if
+                if stat_name
                 stat = {
                     "metric": metric_name,
                     "stat": stat_name,
