@@ -15,4 +15,4 @@ def convert_to_datetime(value):
 
 def convert_to_float(value):
     try:
-        value = float()
+        value = float(value)
