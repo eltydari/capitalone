@@ -9,7 +9,7 @@ METRICS = {
 }
 
 
-def validate_metrics(metrics)
+def validate_metrics(metric)
 
 
 def generate_metadata(measurements):
