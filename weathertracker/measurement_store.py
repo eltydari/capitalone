@@ -3,7 +3,7 @@ import weathertracker.utils.db as db
 from   werkzeug.exceptions import abort
 
 
-class Exception(Exception):
+class EntryNotFouException(Exception):
     pass
 
 
