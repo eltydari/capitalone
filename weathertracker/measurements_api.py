@@ -19,7 +19,7 @@ def parse_timestamp(timestamp):
 def expect(key, json_dict):
     field = json_dict.get(key)
     if not field:
-        raise BadRequest(description = "Field '{}' is )
+        raise BadRequest(description = "Field '{}' is expected b)
 
 
 class MeasurementsAPI(MethodView):
