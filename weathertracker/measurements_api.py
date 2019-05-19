@@ -30,6 +30,7 @@ def process_measurement(req_json):
     return req_json
 
 
+
 class MeasurementsAPI(MethodView):
 
     # features/01-measurements/01-add-measurement.feature
@@ -46,7 +47,7 @@ class MeasurementsAPI(MethodView):
         mdb.add_measurement(req)
         
         resp = Response("Success!", status=201)
-        resp.headers.add("Location", "/measurements/{}".format())
+        resp.headers.add("Location", "/measurements/{}".format(timestamp))
         return resp
 
     # features/01-measurements/02-get-measurement.feature
