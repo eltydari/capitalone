@@ -28,6 +28,7 @@ def validate_metric(metric_name, measurement):
     if measurement.get_metric(metric_name):
         return True
     return False
+
         
         
 class Stats(object):
