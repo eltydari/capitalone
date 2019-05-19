@@ -12,7 +12,8 @@ from weathertracker.utils.conversion import (
 def parse_timestamp(timestamp):
     try:
         timestamp = convert_to_datetime(timestamp)
-    except DatetimeConversionException
+    except DatetimeConversionException:
+        raise Ba
 
 
 class MeasurementsAPI(MethodView):
