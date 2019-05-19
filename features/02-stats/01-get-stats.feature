@@ -105,6 +105,7 @@ Feature: Get measurement statistics
       | toDateTime   | 2015-09-02T17:00:00.000Z |
     Then the response has a status code of 400
 
+
   Scenario: Get stats for a well-reported metric
     # GET /stats?<params...>
     When I get stats with parameters:
