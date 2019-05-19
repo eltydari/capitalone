@@ -35,7 +35,7 @@ class MeasurementsAPI(MethodView):
         mdb.add_measurement(timestamp, metrics)
         
         resp = Response("Success!", status=201)
-        resp.headers.add("Location", "/measureme")
+        resp.headers.add("Location", "/measurements/")
         return Response("Success!", status=201, )
 
     # features/01-measurements/02-get-measurement.feature
