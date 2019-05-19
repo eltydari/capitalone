@@ -126,7 +126,7 @@ Feature: Get measurement statistics
     Then the response has a status code of 400
     
   @new
-  Scenario: Cannot get stats for missing fromDateTime
+  Scenario: Cannot get stats for missing DateTime
     # GET /stats?<params...>
     When I get stats with parameters:
       | param        | value                    |
