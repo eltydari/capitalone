@@ -1,5 +1,5 @@
 """
-Simple  db 
+Simple dicati db 
 """
 _db_instance = None
 
