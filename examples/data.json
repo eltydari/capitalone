@@ -1,7 +1,7 @@
 {
     "timestamp": "2015-09-01T16:00:00.000Z",
     "temperature": 27.1,
-    "dewPoint": 
+    "dewPoint": 16.7 
 }
 
       | timestamp                  | temperature | dewPoint | precipitation |
