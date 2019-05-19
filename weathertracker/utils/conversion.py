@@ -19,7 +19,7 @@ def convert_to_datetime(value):
     return value
     
     
-def convert_from_dateti
+def convert_from_datetime(date)
 
 
 def convert_metric(value):
