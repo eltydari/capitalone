@@ -22,7 +22,7 @@ def parse_timestamp(timestamp):
 def process_measurement(req_json):
     try:
         for key, value in req_json.items():
-            if key == "timestamp":
+            if k == "timestamp":
                 continue
             req_json[key] = convert_metric(value)
     except MetricConversionException as e:
@@ -42,7 +42,6 @@ class MeasurementsAPI(MethodView):
             raise BadRequest(description = "Input timestamp was expected but not provided.")
         timestamp = parse_timestamp(timestamp)
         
-        pjroce
         mdb.add_measurement(req)
         
         resp = Response("Success!", status=201)
