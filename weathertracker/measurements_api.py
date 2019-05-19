@@ -33,7 +33,7 @@ class MeasurementsAPI(MethodView):
             raise BadRequest(description = "Timestamp was expected in the post request but not provided")
         timestamp = parse_timestamp(timestamp)
         
-        metrics = {k:convert_metric(v for k,v in req.iteritems() if k != "timestamp"}
+        metrics = {k:convert_metric(v) for k,v in req.iteritems() if k != "timestamp"}
         add_measurement(timestamp, metrics)
         
         return jsonify(message="Success!")
