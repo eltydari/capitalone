@@ -18,8 +18,8 @@ def get_measurement(date):
     if not measurement:
         raise EntryNotFoundException
     ret = measurement.metrics
-    metrics['timestamp'] = measurment.timestamp
-    return metrics
+    ret['timestamp'] = measurment.timestamp
+    return ret
 
 
 def query_measurements(start_date, end_date):
