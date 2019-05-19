@@ -9,7 +9,7 @@ METRICS = {
 }
 
 
-class InvalidMetric(Exception):
+class InvalidMetricExce(Exception):
     def __init__(self, value):
         super().__init__()
         self.entry = value
