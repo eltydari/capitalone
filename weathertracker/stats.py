@@ -64,7 +64,7 @@ class Stats(object):
                 metadata["max"] = metric
         self._metadata[metric_name] = metadata
         
-    def generate_metadata(self, metric_name):
+    def generate_metadata(self, metric_names):
         pass
         
     def get_stats():
