@@ -82,6 +82,7 @@ Feature: Get measurement statistics
       | "dewPoint"    | "max"     | 17.3  |
       | "dewPoint"    | "average" | 17.1  |
       
+
   Scenario: Get stats for a metric outside of the date range
      # GET /stats?<params...>
     When I get stats with parameters:
