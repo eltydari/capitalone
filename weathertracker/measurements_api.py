@@ -20,7 +20,7 @@ class MeasurementsAPI(MethodView):
         try:
             timestamp = convert_to_datetime(timestamp)
         except DatetimeConversionException:
-            raise BadRequest(description = "Invalid timestamp provided: {}")
+            raise BadRequest(description = "Invalid timestamp provided: {}".format(te))
 
         # TODO:
         abort(501)
