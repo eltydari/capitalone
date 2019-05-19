@@ -28,7 +28,6 @@ Feature: Add a measurement
     Then the response has a status code of 201
     And the Location header has the path "/measurements/2015-09-01T16:00:00.000Z"
 
-  @skip
   Scenario: Cannot add a measurement without a timestamp
     # POST /measurements
     When I submit a new measurement as follows:
