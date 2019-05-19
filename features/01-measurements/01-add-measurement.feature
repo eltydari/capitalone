@@ -23,3 +23,4 @@ Feature: Add a measurement
       | temperature | dewPoint | precipitation |
       | 27.1        | 20       | 0             |
     Then the response has a status code of 400
+
