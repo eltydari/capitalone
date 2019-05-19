@@ -8,7 +8,7 @@ METRICS = {
     "max": lambda metadata: metadata["max"]
 }
 
-MET
+METADATA_TE
 
 
 class InvalidMetricException(Exception):
