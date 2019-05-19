@@ -30,7 +30,8 @@ def process_measurement(req_json):
     return req_json
     
     
-def stringify(ret_)
+def stringify(ret_json):
+    
 
 
 class MeasurementsAPI(MethodView):
