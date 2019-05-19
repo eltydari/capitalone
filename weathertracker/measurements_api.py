@@ -23,11 +23,10 @@ def process_measurement(pairs):
     for key, value in pairs.items():
         if key == "timestamp":
             continue
-        print(key)
         try:
             float(key)
             raise BadRequest(description = "Input metric key is a numeric: {}".format(key))
-        except ValueError
+        except ValueError:
             pass
         try:
             pairs[key] = convert_metric(value)
