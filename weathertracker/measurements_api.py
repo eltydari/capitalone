@@ -56,6 +56,6 @@ class MeasurementsAPI(MethodView):
         
         try:
             metrics = get_measurement(timestamp)
-        e
+        except 
         # TODO:
         abort(501)
