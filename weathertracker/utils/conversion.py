@@ -6,10 +6,8 @@ class ConversionException(Exception):
         self.value = value
 
 
-class DatetimeConversionException():
-    def __init__(self, value):
-        super.__init__()
-        self.value = value
+class DatetimeConversionException(ConversionException):
+    pass
 
 
 class MetricConversionException(Exception):
