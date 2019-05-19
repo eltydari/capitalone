@@ -115,3 +115,4 @@ Feature: Get measurement statistics
       | stat         | average                  |
       | fromDateTime | 2015-09-01T16:00:00.000Z |
       | toDateTime   | 2015-09-01T17:00:00.000Z |
+    
