@@ -66,7 +66,7 @@ class MeasurementsAPI(MethodView):
         try:
             measurement = mdb.get_measurement(timestamp)
         except mdb.EntryNotFoundException as e:
-            raise NotFound("Entry was not found in database: {}".format())
+            raise NotFound("Entry was not found in database: {}".format(e))
             
         stringify(measurement)
         return jsonify(measurement)
