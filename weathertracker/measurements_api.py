@@ -34,7 +34,7 @@ class MeasurementsAPI(MethodView):
         try:
             metrics = {k:convert_metric(v) for k,v in req.items() if k != "timestamp"}
         except MetricConversionException as e:
-            raise BadRequest(description = "Metric value is not a float:".format(e.value))
+            raise BadRequest(description = "Metric value is not a float: ".format(e.value))
             
         mdb.add_measurement(timestamp, metrics)
         
