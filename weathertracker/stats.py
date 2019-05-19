@@ -48,7 +48,8 @@ def generate_metadata(metric, measurements):
     metadata["count"] = len(measurements)
     for measurement in measurements:
         metadata["sum"] += validate_metric(metric, measurement)
-        if min is 
+        if min is None:
+            min
     
 
 def get_stats(stats, metrics, from_datetime, to_datetime):
