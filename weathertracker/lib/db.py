@@ -4,4 +4,4 @@ def get_db():
     pass
 
 def teardown_db():
-    pas
+    pass
