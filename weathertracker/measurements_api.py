@@ -14,7 +14,7 @@ class MeasurementsAPI(MethodView):
     # features/01-measurements/01-add-measurement.feature
     def post(self):
         r_details = request.get_json()
-        timestamp =- 
+        timestamp = con
         
         return jsonify(message="Success!")
 
