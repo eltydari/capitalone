@@ -62,7 +62,6 @@ class Stats(object):
         
     def get_stats(self, stats):
         ret = []
-        func = STATS[stat_name]
         for metric_name, metadata in self._metadata:
             stat = {
                 
