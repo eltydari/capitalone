@@ -9,7 +9,7 @@ METRICS = {
 }
 
 
-def generat
+def generate_metadata
 
 
 def get_stats(stats, metrics, from_datetime, to_datetime):
