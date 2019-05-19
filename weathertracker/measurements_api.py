@@ -30,7 +30,7 @@ class MeasurementsAPI(MethodView):
         timestamp = parse_timestamp(timestamp)
         
         for key, value in req:
-            if 
+            if k
         
         return jsonify(message="Success!")
 
