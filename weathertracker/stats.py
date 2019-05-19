@@ -51,7 +51,7 @@ def generate_metadata(metric_name, measurements):
         metadata["sum"] += metric
         if metadata["min"] is None:
             metadata["min"] = metric
-        elif metric < metadata[]:
+        elif metric < metadata["min"]:
             
     
 
