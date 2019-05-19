@@ -4,7 +4,8 @@ from werkzeug.exceptions import abort, BadRequest
 from weathertracker.utils.conversion import (
     convert_to_datetime,
     DatetimeConversionException,
-    convert_met
+    convert_metric,
+    M
 )
 
 
