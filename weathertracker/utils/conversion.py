@@ -13,4 +13,4 @@ def convert_to_datetime(value):
     return value
 
 
-def convert_to_f
+def convert_to_float(value)
