@@ -17,7 +17,7 @@ class StatsAPI(MethodView):
         to_datetime = request.args.get("toDateTime")
 
         # Validate query params are provided
-        if any( 
+        if any(
             [
                 len(stats) == 0,
                 len(metrics) == 0,
