@@ -25,7 +25,7 @@ class InvalidMetricException(Exception):
 def validate_stats(stat_names):
     for name in stat_names:
         if name not in stats:
-            p
+            pass
 
 
 def generate_metadata(measurements):
