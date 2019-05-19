@@ -96,7 +96,7 @@ Feature: Get measurement statistics
     And the response body is an empty array
       
   @new
-  Scenario: Get stats for 
+  Scenario: Get stats for no input
      # GET /stats?<params...>
     When I get stats with parameters:
       | param        | value                    |
