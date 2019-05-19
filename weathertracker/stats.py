@@ -35,12 +35,6 @@ def validate_metric(metric_name, measurement):
     if measurement.get_metric(metric_name):
         return True
     return False
-    
-    try:
-        metric = measurement.get_metric(metric_name)
-    except KeyError:
-        raise InvalidMetricException(metric_name, measurement["timestamp"])
-    return measurement[metric]
         
         
 class Stats(object):
