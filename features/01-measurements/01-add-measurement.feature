@@ -17,6 +17,7 @@ Feature: Add a measurement
       | "2015-09-01T16:00:00.000Z" | 27.1        | 16.7     | 0             |
     Then the response has a status code of 201
     And the Location header has the path "/measurements/2015-09-01T16:00:00.000Z"
+    
   @skip
   Scenario: Cannot add a measurement with invalid values
     # POST /measurements
