@@ -26,7 +26,7 @@ def validate_stats(stat_names):
     for name in stat_names:
         if name not in stats:
             raise InvalidStatException(name)
-
+    return 
 
 
 def generate_metadata(measurements):
