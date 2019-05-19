@@ -9,7 +9,7 @@ class EntryNotFoundException(Exception):
 
 def add_measurement(measurement):
     dbstore = db.get_db()
-    date = measurement[]
+    date = measurement[""]
     dbstore[date] = Measurement(date, metrics)
 
 
