@@ -16,7 +16,7 @@ class MeasurementsAPI(MethodView):
         
         r_details = request.get_json()
         
-        
+        try:
         timestamp = convert_to_datetime()
         
         return jsonify(message="Success!")
