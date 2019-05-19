@@ -65,7 +65,6 @@ class Stats(object):
          self._metadata[metric_name] = metadata
         
 
-
 def get_stats(stats, metrics, from_datetime, to_datetime):
     validate_stats(stats)
     measurements = query_measurements(from_datetime, to_datetime)
