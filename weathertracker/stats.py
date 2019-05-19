@@ -30,7 +30,7 @@ class InvalidMetricException(Exception):
         
         
 def validate_stats(stat_names):
-
+    ret
     for name in stat_names:
         if name not in STATS:
             raise InvalidStatException(name)
