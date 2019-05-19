@@ -60,7 +60,7 @@ class Stats(object):
         for metric_name in metrics:
             self._generate_metadata(metric_name)
         
-    def get_stats(stats):
+    def get_stats(sstats):
         ret = []
         func = STATS[stat_name]
         for metric_name, metadata in self._metadata:
