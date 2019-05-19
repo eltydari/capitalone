@@ -73,3 +73,4 @@ def get_stats(stats, metrics, from_datetime, to_datetime):
     stats_obj = Stats(metrics, from_datetime, to_datetime)
     for stat_name in stats:
         ret.extend(stats_obj.get_stats(stat_name))
+    return 
