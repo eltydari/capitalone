@@ -125,4 +125,12 @@ Feature: Get measurement statistics
       | toDateTime   | 2015-09-01T17:00:00.000Z |
     Then the response has a status code of 400
     
-  
+  @new
+  Scenario: Cannot get stats for missing fromDateTime
+    # GET /stats?<params...>
+    When I get stats with parameters:
+      | param        | value                    |
+      | stat         | min                      |
+      | metric       | precipitation            |
+      | toDateTime   | 2015-09-01T17:00:00.000Z |
+    Then the response has a status code of 400
