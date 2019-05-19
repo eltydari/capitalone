@@ -17,10 +17,6 @@ def convert_to_datetime(value):
     except (ValueError, OverflowError):
         raise DatetimeConversionException()
     return value
-    
-    
-def convert_from_datetime(value):
-    return
 
 
 def convert_metric(value):
