@@ -1,5 +1,5 @@
 """
-Simple dicati db 
+Simple dictionary db 
 """
 _db_instance = None
 
