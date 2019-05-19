@@ -67,7 +67,7 @@ class Stats(object):
         
     def aggregate_metrics(self, metrics):
         for metric_name in metrics:
-            self._generate_metadata()
+            self._generate_metadata(metric_name)
         
     def get_stats():
         pass
