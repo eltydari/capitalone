@@ -34,7 +34,8 @@ def stringify(ret_json):
     # Main purpose is to turn '0.0' into '0'
     for key, value in ret_json.items():
         if value == 0:
-            value = 01-measurem
+            value = 0
+        
 
 
 class MeasurementsAPI(MethodView):
