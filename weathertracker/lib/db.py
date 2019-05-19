@@ -1,5 +1,5 @@
 """
-Simple dictionary db interface that lives in process memory
+Simple dictionary db interface that lives in process memory.
 
 """
 
