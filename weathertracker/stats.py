@@ -12,7 +12,7 @@ METADATA_TEMPLATE = {
     "sum": 0.0,
     "min": 0.0,
     "max": 0.0,
-    "count":
+    "count": 0,
 }
 
 
