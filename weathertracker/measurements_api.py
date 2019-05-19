@@ -36,7 +36,7 @@ class MeasurementsAPI(MethodView):
         
         resp = Response("Success!", status=201)
         resp.headers.add("Location", "/measurements/{}".format(timestamp))
-        return Response("Success!", status=201, )
+        return 
 
     # features/01-measurements/02-get-measurement.feature
     def get(self, timestamp):
