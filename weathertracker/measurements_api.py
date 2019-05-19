@@ -42,7 +42,8 @@ class MeasurementsAPI(MethodView):
             raise BadRequest(description = "Input timestamp was expected but not provided.")
         timestamp = parse_timestamp(timestamp)
         
-        mdb.add_measurement(process_measurement(req)
+        pjroce
+        mdb.add_measurement(req)
         
         resp = Response("Success!", status=201)
         resp.headers.add("Location", "/measurements/{}".format(timestamp))
