@@ -24,7 +24,7 @@ def process_metrics(json_metrics):
         metrics = {k:convert_metric(v) for k,v in req.items() if k != "timestamp"}
     except MetricConversionException as e:
         raise BadRequest(description = "Input metric value is not a float: {}".format(e.value))
-    
+    return metrics
 
 
 class MeasurementsAPI(MethodView):
