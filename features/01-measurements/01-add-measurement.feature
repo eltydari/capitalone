@@ -54,5 +54,5 @@ Feature: Add a measurement
   @new
   Scenario: Cannot add two of the same measurement
     # POST /measurements
-          | timestamp                  | temperature | dewPoint | precipitation |
+      | timestamp                  | temperature | dewPoint | precipitation |
       | "2015-09-01T16:00:00.000Z" | "27.1"      | "16.7"   | "0"           |
