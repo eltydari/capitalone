@@ -10,10 +10,10 @@ Feature: Add a measurement
     Then the response has a status code of 201
     And the Location header has the path "/measurements/2015-09-01T16:00:00.000Z"
 
-  Scenario: Add a measurement with  values
+  Scenario: Add a measurement with no values
     # POST /measurements
     When I submit a new measurement as follows:
-      | timestamp                  | temperature | dewPoint | precipitation |
+      | timestamp                  |
       | "2015-09-01T16:00:00.000Z" | 27.1        | 16.7     | 0             |
     Then the response has a status code of 201
     And the Location header has the path "/measurements/2015-09-01T16:00:00.000Z"
