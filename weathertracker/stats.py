@@ -12,7 +12,7 @@ METRICS = {
 class InvalidMetricException(Exception):
     def __init__(self, value):
         super().__init__()
-        self.entry = value
+        self. = value
 
 
 def validate_metrics(metric_names):
