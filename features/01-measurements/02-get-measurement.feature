@@ -26,4 +26,4 @@ Feature: Get a measurement
     When I get a measurement for "2015-09-01T16:50:00.000Z"
     Then the response has a status code of 404
     
-  Scenario: Get a measurement without parameters
+  Scenario: Get a measurement without 
