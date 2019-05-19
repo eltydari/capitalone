@@ -3,7 +3,7 @@ from werkzeug.exceptions import BadRequest
 
 
 class DatetimeConversionException(BadRequest):
-    def 
+    def __init__(self)
 
 
 class MetricConversionException(BadRequest):
