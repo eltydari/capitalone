@@ -1,5 +1,5 @@
 """
-Simple dictionary db 
+Simple dictionary d 
 """
 _db_instance = None
 
