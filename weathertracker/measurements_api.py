@@ -14,6 +14,8 @@ class MeasurementsAPI(MethodView):
     # features/01-measurements/01-add-measurement.feature
     def post(self):
         r_details = request.get_json()
+        
+        
         return jsonify(message="Success!")
 
     # features/01-measurements/02-get-measurement.feature
