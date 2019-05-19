@@ -16,7 +16,7 @@ def parse_timestamp(timestamp):
         raise BadRequest(description = "Timestamp input is invalid: {}".format(timestamp))
     return timestamp
     
-def excp
+def expect()
 
 
 class MeasurementsAPI(MethodView):
