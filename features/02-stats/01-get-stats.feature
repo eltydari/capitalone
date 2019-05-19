@@ -132,4 +132,5 @@ Feature: Get measurement statistics
       | param        | value                    |
       | stat         | min                      |
       | metric       | precipitation            |
+      | fromDateTime | 2015-09-01T16:00:00.000Z |
     Then the response has a status code of 400
