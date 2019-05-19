@@ -1,5 +1,5 @@
 {
-    
+    ""
 }
 
       | timestamp                  | temperature | dewPoint | precipitation |
