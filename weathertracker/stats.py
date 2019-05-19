@@ -22,7 +22,7 @@ class InvalidMetricException(Exception):
         self.metric = value
 
 
-def validate_metrics(metric_names):
+def validate_(metric_names):
     for name in metric_names:
         if name not in METRICS:
             
