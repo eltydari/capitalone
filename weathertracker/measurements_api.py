@@ -34,6 +34,7 @@ def stringify(ret_json):
     # Main purpose is to turn '0.0' into '0'
     for key, value in ret_json.items():
         if value == 0:
+            val
 
 
 class MeasurementsAPI(MethodView):
