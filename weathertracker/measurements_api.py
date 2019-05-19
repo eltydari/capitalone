@@ -11,7 +11,7 @@ from weathertracker.utils.conversion import (
 
 def parse_timestamp(timestamp):
     try:
-        timestamp = 
+        timestamp = convert_to
 
 
 class MeasurementsAPI(MethodView):
