@@ -32,7 +32,8 @@ def validate_stats(stat_names):
         
         
 def validate_metric(metric_name, measurement):
-    if measurement.get_metric(metric_name)
+    if measurement.get_metric(metric_name):
+        
     
     try:
         metric = measurement.get_metric(metric_name)
