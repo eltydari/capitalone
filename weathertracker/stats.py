@@ -16,13 +16,6 @@ METADATA_TEMPLATE = {
 }
         
         
-class InvalidMetricException(Exception):
-    def __init__(self, value, timestamp):
-        super().__init__()
-        self.metric = metric
-        self.timestamp = timestamp
-        
-        
 def validate_stats(stat_names):
     ret = []
     for name in stat_names:
