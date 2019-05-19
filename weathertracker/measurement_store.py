@@ -7,7 +7,7 @@ class EntryNotFoundException(Exception):
     pass
 
 
-def add_measurement(date, measureme):
+def add_measurement(date, measurement):
     dbstore = db.get_db()
     dbstore[date] = Measurement(date, metrics)
 
