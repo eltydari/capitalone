@@ -29,7 +29,7 @@ class MeasurementsAPI(MethodView):
             raise BadRequest(description = "Timestamp was expected in the post request but not provided")
         timestamp = parse_timestamp(timestamp)
         
-        for key, value in 
+        for key, value in r
         
         return jsonify(message="Success!")
 
