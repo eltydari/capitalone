@@ -39,7 +39,7 @@ def validate_metadata(data):
     
         
 class Stats(object):
-    # T
+    #The point o
     def __init__(self, metrics, start_date, end_date):
         self.measurements = query_measurements(start_date, end_date)
         self._aggregate_metrics(metrics)
