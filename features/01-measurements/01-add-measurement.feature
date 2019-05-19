@@ -20,7 +20,7 @@ Feature: Add a measurement
     And the Location header has the path "/measurements/2015-09-01T16:00:00.000Z"
     
   @new
-  Scenario: Add a measurement with string nu
+  Scenario: Add a measurement with string numerics
     # POST /measurements
     When I submit a new measurement as follows:
       | timestamp                  | temperature    | dewPoint | precipitation |
