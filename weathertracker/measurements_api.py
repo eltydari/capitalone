@@ -31,7 +31,7 @@ class MeasurementsAPI(MethodView):
         timestamp = parse_timestamp(timestamp)
         
         metrics = {k:convert_metric(v) for k,v in req.items() if k != "timestamp"}
-        add_measurement(timestamp, metrics)
+        madd_measurement(timestamp, metrics)
         
         return jsonify(message="Success!")
 
