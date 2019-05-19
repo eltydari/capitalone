@@ -4,7 +4,7 @@ from weathertracker.measurement_store import query_measurements
 
 # Registered metrics will use metadata generated within get_stats
 STATS = {
-    "average": lambda metadata: round(metadata["sum"]/metadata["count"],,
+    "average": lambda metadata: round(metadata["sum"]/metadata["count"],10),
     "min": lambda metadata: metadata["min"],
     "max": lambda metadata: metadata["max"]
 }
