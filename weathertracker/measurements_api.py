@@ -69,4 +69,4 @@ class MeasurementsAPI(MethodView):
             raise NotFound("Entry was not found in database.")
             
         stringify(measurement)
-        return jsonify(stringify(measurement))
+        return jsonify(measurement))
