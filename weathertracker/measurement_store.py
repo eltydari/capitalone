@@ -15,6 +15,7 @@ def add_measurement(measurement):
 
 
 def get_measurement(date):
+
     dbstore = db.get_db()
     print(dbstore)
     measurement = dbstore.get(date)
