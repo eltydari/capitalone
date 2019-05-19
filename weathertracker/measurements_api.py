@@ -32,7 +32,7 @@ def process_measurement(req_json):
     
 def stringify(ret_json):
     # Main purpose is to turn '0.0' into '0'
-    for 
+    for key, value
 
 
 class MeasurementsAPI(MethodView):
