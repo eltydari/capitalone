@@ -33,5 +33,4 @@ class StatsAPI(MethodView):
             return abort(400)
 
         stats = get_stats(stats, metrics, from_datetime, to_datetime)
-        print(stats)
         return jsonify(stats)
