@@ -28,15 +28,6 @@ def process_measurement(pairs):
     except MetricConversionException as e:
         raise BadRequest(description = "Input metric value is not a float: {}".format(e.value))
     return pairs
-    
-    
-def stringify(pairs):
-    # Main purpose is to turn '0.0' into '0'
-    for key, value in pairs.items():
-        if value == 0:
-            value = 0
-        pairs[key] = str(value)
-    return pairs
 
 
 class MeasurementsAPI(MethodView):
