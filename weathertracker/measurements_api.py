@@ -17,8 +17,7 @@ class MeasurementsAPI(MethodView):
     # features/01-measurements/02-get-measurement.feature
     def get(self, timestamp):
 
-        try:
-            timestamp = convert_to_datetime(timestamp)
+        timestamp = convert_to_datetime(timestamp)
 
         # TODO:
         abort(501)
