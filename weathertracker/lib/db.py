@@ -1,1 +1,1 @@
-_db_instance = N
+_db_instance = None
