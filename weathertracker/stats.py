@@ -40,7 +40,7 @@ def validate_metadata(data):
         
 class Stats(object):
     """
-    # The point of this object is to save compute time by aggregating
+    The point of this object is to save compute time by aggregating
     # all the statics into metadata first, preventing the need to compute
     # stats over and over for each metric
     """
