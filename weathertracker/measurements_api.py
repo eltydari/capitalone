@@ -1,5 +1,5 @@
-from flask import request, jsonify
-from flask.views import MethodView
+from  flask import request, jsonify
+from   flask.views import MethodView
 from   werkzeug.exceptions import abort, BadRequest
 import weathertracker.measurement_store import (
     add_measurement,
