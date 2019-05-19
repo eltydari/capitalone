@@ -39,7 +39,7 @@ class MeasurementsAPI(MethodView):
             resp.headers.add("Location", "/measurements/{}".format(timestamp))
             return resp
         except MetricConversionException:
-            raise 
+            raise BadRequest()
 
     # features/01-measurements/02-get-measurement.feature
     def get(self, timestamp):
