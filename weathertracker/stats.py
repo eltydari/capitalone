@@ -58,6 +58,7 @@ def generate_metadata(metric_name, measurements):
         elif metric > metadata["max"]:
             metadata["max"] = metric
      return metadata
+     
 
 def get_stats(stats, metrics, from_datetime, to_datetime):
     validate_stats(stats)
