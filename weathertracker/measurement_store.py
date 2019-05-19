@@ -9,7 +9,7 @@ def add_measurement(date, metrics):
 
 
 def get_measurement(date):
-    dbsor
+    dbstore = db.
     return db
 
 
