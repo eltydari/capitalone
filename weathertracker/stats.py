@@ -50,7 +50,8 @@ def generate_metadata(metric_name, measurements):
         metric = validate_metric(metric_name, measurement)
         metadata["sum"] += metric
         if metadata["min"] is None:
-            metadata["min"] = 
+            metadata["min"] = metric
+            
     
 
 def get_stats(stats, metrics, from_datetime, to_datetime):
