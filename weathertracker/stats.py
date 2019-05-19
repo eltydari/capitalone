@@ -28,7 +28,7 @@ def validate_stats(stat_names):
     for name in stat_names:
         if name in STATS:
             ret.append(name)
-    return stat_names
+    return 
         
         
 def validate_metric(metric_name, measurement):
