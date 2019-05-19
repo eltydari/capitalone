@@ -40,7 +40,7 @@ def validate_metadata(data):
         
 class Stats(object):
     # The point of this object is to save compute time by aggregating
-    # all the statics into metadata first, preventing the nee
+    # all the statics into metadata first, preventing the need to 
     def __init__(self, metrics, start_date, end_date):
         self.measurements = query_measurements(start_date, end_date)
         self._aggregate_metrics(metrics)
