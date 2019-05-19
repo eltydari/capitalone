@@ -33,7 +33,7 @@ class MeasurementsAPI(MethodView):
             raise BadRequest(description = "Timestamp was expected in the post request but not provided")
         timestamp = parse_timestamp(timestamp)
         
-        add_measureme
+        add_measurement()
         for key, value in req.iteritems():
             if key == 'timestamp':
             
