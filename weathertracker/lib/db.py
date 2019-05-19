@@ -10,4 +10,4 @@ def get_db():
         _db_instance = {}
     return _db_instance
 
-class Databas
+class Database()
