@@ -15,7 +15,7 @@ class MeasurementsAPI(MethodView):
     def post(self):
         # TODO:
         print(request.args)
-        return({'message':''})
+        return({'message':'Success'})
 
     # features/01-measurements/02-get-measurement.feature
     def get(self, timestamp):
