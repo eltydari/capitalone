@@ -63,7 +63,8 @@ class Stats(object):
     def get_stats(self, stats):
         ret = []
         for metric_name, metadata in self._metadata:
-            for stat_name in
+            for stat_name in stats:
+                
             stat = {
                 
             }
