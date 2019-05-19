@@ -55,6 +55,6 @@ class MeasurementsAPI(MethodView):
         timestamp = parse_timestamp(timestamp)
         
         try:
-        metrics = get_measurement(timestamp)
+            metrics = get_measurement(timestamp)
         # TODO:
         abort(501)
