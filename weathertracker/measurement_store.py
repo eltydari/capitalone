@@ -5,7 +5,7 @@ from   werkzeug.exceptions import abort
 
 
 class EntryNotFoundException(Exception):
-    pass
+    
 
 
 def add_measurement(measurement):
