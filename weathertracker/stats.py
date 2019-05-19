@@ -66,7 +66,7 @@ class Stats(object):
             for stat_name in stats:
                 stat_func = STATS[stat_name]
                 stat = {
-                    m
+                    ""
                 }
 
 def get_stats(stats, metrics, from_datetime, to_datetime):
