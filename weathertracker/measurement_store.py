@@ -3,9 +3,9 @@ import weathertracker.utils.db as db
 from   werkzeug.exceptions import abort
 
 
-def add_measurement(date, measurement):
+def add_measurement(date, metrics):
     dbstore = db.get_db()
-    dbstore[date] = M
+    dbstore[date] = Measurement(d)
 
 
 def get_measurement(date):
