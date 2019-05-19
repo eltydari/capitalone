@@ -19,7 +19,7 @@ def parse_timestamp(timestamp):
     return timestamp
     
 
-def process_measurement():
+def process_measurement(pairs):
     try:
         for key, value in req_json.items():
             if key == "timestamp":
