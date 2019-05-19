@@ -21,6 +21,7 @@ class InvalidStatException(Exception):
         self.stat = value
 
 
+
 def validate_stats(stat_names):
     for name in stat_names:
         if name not in STATS:
