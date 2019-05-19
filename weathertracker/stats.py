@@ -53,7 +53,8 @@ def generate_metadata(metric_name, measurements):
             metadata["min"] = metric
         elif metric < metadata["min"]:
             metadata["min"] = metric
-        if metadata["max"] is N
+        if metadata["max"] is None:
+            meta
     
 
 def get_stats(stats, metrics, from_datetime, to_datetime):
