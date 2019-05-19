@@ -33,7 +33,6 @@ class MeasurementsAPI(MethodView):
         
         try:
             metrics = {k:convert_metric(v) for k,v in req.items() if k != "timestamp"}
-        
         except MetricConversionException:
             raise BadRequest(description = "Metric ")
             
