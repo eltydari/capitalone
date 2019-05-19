@@ -1,6 +1,6 @@
 """
 Simple db 
-""
+"""
 _db_instance = None
 
 def get_db():
