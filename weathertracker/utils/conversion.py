@@ -4,7 +4,7 @@ from werkzeug.exceptions import BadRequest
 
 class DatetimeConversionException(BadRequest):
     def __init__(self, message):
-        super.__
+        super.__init__(desc)
 
 
 class MetricConversionException(BadRequest):
