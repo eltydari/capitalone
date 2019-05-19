@@ -75,7 +75,6 @@ class Stats(object):
 
 
 def get_stats(stats, metrics, from_datetime, to_datetime):
-    print(stats)
     stats = validate_stats(stats)
     print(stats)
     stats_obj = Stats(metrics, from_datetime, to_datetime)
