@@ -1,2 +1,2 @@
 """
-Performs vali
+Performs validation on inputs
