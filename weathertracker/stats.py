@@ -37,7 +37,7 @@ def validate_stats(stat_names):
     
 def validate_metric(metric, measurement):
     try:
-        measurement.get_metric(metric):
+        metric = measurement.get_metric(metric):
         raise InvalidMetricException(metric, measurement["timestamp"])
     return measurement[metric]
 
