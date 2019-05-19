@@ -22,7 +22,7 @@ class StatsAPI(MethodView):
             raise BadRequest("fromDateTime was not provided.")
         to_datetime = request.args.get("toDateTime")
         if to_datetime is None:
-            raise BadRequest("toDateTime was not provided")
+            raise BadRequest("toDateTime was not provided.")
 
         # Validate query params are provided
         if any(
