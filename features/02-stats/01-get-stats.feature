@@ -100,8 +100,6 @@ Feature: Get measurement statistics
      # GET /stats?<params...>
     When I get stats with parameters:
       | param        | value                    |
-      | metric       | precipitation            |
-      | fromDateTime | 2015-09-02T16:00:00.000Z |
       | toDateTime   | 2015-09-02T17:00:00.000Z |
     Then the response has a status code of 200
     And the response body is an empty array
