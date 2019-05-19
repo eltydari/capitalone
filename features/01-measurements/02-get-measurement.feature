@@ -26,7 +26,7 @@ Feature: Get a measurement
     When I get a measurement for "2015-09-01T16:50:00.000Z"
     Then the response has a status code of 404
 
-  @
+  @new
   Scenario: Get a measurement without content
     Given I have submitted new measurements as follows:
       | timestamp                  |
