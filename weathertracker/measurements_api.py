@@ -36,7 +36,7 @@ def stringify(pairs):
         if value == 0:
             value = 0
         pairs[key] = str(value)
-    return collection
+    return pairs
 
 
 class MeasurementsAPI(MethodView):
