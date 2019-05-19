@@ -24,6 +24,7 @@ def validate_metrics(metric_names):
 def generate_metadata(measurements):
     metadata = {
         "sum": 0.0,
+        ""
     }
 
 
