@@ -1,4 +1,3 @@
-
 Feature: Get a measurement
   In order to learn what weather conditions were like at a specific time
   I want to be able to retrieve a measurement of several metrics at that time
@@ -26,3 +25,4 @@ Feature: Get a measurement
     # GET /measurements/2015-09-01T16:50:00.000Z
     When I get a measurement for "2015-09-01T16:50:00.000Z"
     Then the response has a status code of 404
+
