@@ -1,5 +1,5 @@
 from   .measurement import Measurement
-import w.utils.db as get_db
+import weathertr.utils.db as get_db
 from   werkzeug.exceptions import abort
 
 
