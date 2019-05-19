@@ -22,7 +22,7 @@ class InvalidStatException(Exception):
         
         
 class InvalidMetricException(Exception):
-    def __init__(self,):
+    def __init__(self, metric,):
         super().__init__()
 
 
