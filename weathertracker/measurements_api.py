@@ -20,6 +20,7 @@ def parse_timestamp(timestamp):
     
 
 def process_measurement(req_json):
+
     for key, value in req_json.items():
         if k == "timestamp":
             continue
