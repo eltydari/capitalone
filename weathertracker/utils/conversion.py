@@ -1,5 +1,5 @@
 from dateutil.parser import parse
-from werkzeug.exceptions import
+from werkzeug.exceptions import Bad
 
 class DatetimeConversionException(Exception):
     pass
