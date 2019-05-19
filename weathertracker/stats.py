@@ -43,7 +43,7 @@ def validate_metric(metric_name, measurement):
     return measurement[metric]
 
 
-def generate_metadata(metric, measurements):
+def generate_metadata(metric_, measurements):
     metadata = dict(METADATA_TEMPLATE)
     metadata["count"] = len(measurements)
     for measurement in measurements:
