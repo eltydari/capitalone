@@ -4,7 +4,7 @@ from werkzeug.exceptions import HTTPException
 
 class DatetimeConversionException(HTTPException):
     code = 400
-    self.description = "oops"
+    description = "oops"
     #def __init__(self, message):
     #    super()
     #    self.code = 400
