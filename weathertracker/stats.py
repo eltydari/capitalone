@@ -63,7 +63,8 @@ class Stats(object):
             elif metric > metadata["max"]:
                 metadata["max"] = metric
         self._metadata[metric_name] = metadata
-
+        
+    
         
 
 def get_stats(stats, metrics, from_datetime, to_datetime):
