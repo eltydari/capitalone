@@ -1,5 +1,6 @@
 from dateutil.parser import parse
 
+class
 
 
 class DatetimeConversionException(Exception):
