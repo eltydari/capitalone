@@ -39,3 +39,4 @@ Feature: Get a measurement
       
   @new
   Scenario: Get a conflicting measurement
+    
