@@ -1,6 +1,6 @@
 from flask import request, jsonify
 from flask.views import MethodView
-from werkzeug.exceptions import abort, BadRequest
+from werkzeug.exceptions import abort
 from weathertracker.utils.conversion import (
     convert_to_datetime,
     DatetimeConversionException,
@@ -20,7 +20,7 @@ class MeasurementsAPI(MethodView):
         try:
             timestamp = convert_to_datetime(timestamp)
         except DatetimeConversionException:
-            raise BadRequest(description = "Invalid timestamp provided: {}".format(timestam))
+            return abort(400)
 
         # TODO:
         abort(501)
