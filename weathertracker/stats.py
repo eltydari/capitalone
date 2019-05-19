@@ -69,7 +69,7 @@ class Stats(object):
         for metric_name in metrics:
             self._generate_metadata(metric_name)
         
-    def get_stat(mstat_name):
+    def get_stat(metric_name, stat_name):
         pass
         
 
