@@ -15,7 +15,7 @@ def add_measurement(date, metrics):
 def get_measurement(date):
     dbstore = db.get_db()
     measurement = dbstore.get(date)
-    if not emas
+    if not measure
     return dbstore.get(date)
 
 
