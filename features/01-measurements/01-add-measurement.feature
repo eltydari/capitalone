@@ -24,6 +24,7 @@ Feature: Add a measurement
       | 27.1        | 20       | 0             |
     Then the response has a status code of 400
 
+
   Scenario: Cannot add a measurement without a timestamp
     # POST /measurements
     When I submit a new measurement as follows:
