@@ -28,8 +28,8 @@ def process_measurement(pairs):
             raise BadRequest(description = "Input metric key is not a string: {}".format(key))
         try:
             pairs[key] = convert_metric(value)
-    except MetricConversionException as e:
-        raise BadRequest(description = "Input metric value is not a float: {}".format(e.value))
+        except MetricConversionException as e:
+            raise BadRequest(description = "Input metric value is not a float: {}".format(e.value))
     except BadRequest:
         raise
     return pairs
