@@ -29,5 +29,5 @@ Feature: Get a measurement
   Scenario: Get a measurement without content
     Given I have submitted new measurements as follows:
       | timestamp                  |
-      | "2015-09-01T16:00:00.000Z" |
+      | "2015-09-0T16:00:00.000Z" |
     When I get a measurement for "2015-09-01T16:20:00.000Z"
