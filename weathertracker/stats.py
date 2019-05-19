@@ -61,7 +61,7 @@ class Stats(object):
             self._generate_metadata(metric_name)
         
     def get_stats(stat_name):
-        for metric_name, metadata in self.
+        for metric_name, metadata in self._
         
 
 def get_stats(stats, metrics, from_datetime, to_datetime):
