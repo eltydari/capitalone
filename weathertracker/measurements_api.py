@@ -31,7 +31,7 @@ class MeasurementsAPI(MethodView):
         
         timestamp = req.get('timestamp')
         if not timestamp:
-            raise B
+            raise BadRequest
         
         timestamp = parse_timestamp(req_details[])
         
