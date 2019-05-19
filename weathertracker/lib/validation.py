@@ -2,4 +2,4 @@
 Performs validation on inputs
 """
 
-def validate_
+def validate_input()
