@@ -48,7 +48,7 @@ def generate_metadata(metric_name, measurements):
     metadata["count"] = len(measurements)
     for measurement in measurements:
         metric = 
-        metadata["sum"] += validate_metric(metric, measurement)
+        metadata["sum"] += 
         if metadata["min"] is None:
             metadata["min"] = valid
     
