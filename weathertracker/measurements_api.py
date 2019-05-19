@@ -27,7 +27,7 @@ def process_measurement(pairs):
         try:
             float(key)
             raise BadRequest(description = "Input metric key is a numeric: {}".format(key))
-        except V
+        except ValueError
             pass
         try:
             pairs[key] = convert_metric(value)
