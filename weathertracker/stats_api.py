@@ -23,6 +23,7 @@ class StatsAPI(MethodView):
         to_datetime = request.args.get("toDateTime")
         if to_datetime is None:
             raise BadRequest("toDateTime was not provided.")
+            
         try:
             from_datetime = convert_to_datetime(from_datetime)
             to_datetime = convert_to_datetime(to_datetime)
