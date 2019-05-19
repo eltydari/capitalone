@@ -18,7 +18,7 @@ METADATA_TEMPLATE = {
 class InvalidStatException(Exception):
     def __init__(self, value):
         super().__init__()
-        self. = value
+        self.stat = value
 
 
 def validate_stats(stat_names):
