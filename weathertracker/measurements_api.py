@@ -19,7 +19,7 @@ class MeasurementsAPI(MethodView):
         try:
             timestamp = convert_to_datetime(timestamp)
         except DatetimeConversionException:
-            ri
+            raise 
             
         
         return jsonify(message="Success!")
