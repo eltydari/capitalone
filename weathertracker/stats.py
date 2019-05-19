@@ -35,7 +35,7 @@ def validate_stats(stat_names):
     
 def validate_metric(metric_name, measurement):
     if measurement.get(metric_name) is None:
-        raise InvalidMetricException(metric_name)
+        raise InvalidMetricException(metric_name,)
 
 
 def generate_metadata(metric, measurements):
