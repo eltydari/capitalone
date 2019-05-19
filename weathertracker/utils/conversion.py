@@ -13,7 +13,7 @@ def convert_to_datetime(value):
     try:
         value = parse(value)
     except (ValueError, OverflowError):
-        raise DatetimeConversionException(value)
+        raise DatetimeConversionException()
     return value
 
 
