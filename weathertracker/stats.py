@@ -71,7 +71,7 @@ class Stats(object):
                     "value": stat_func(metadata),
                 }
                 ret.append(stat)
-
+        return
 
 def get_stats(stats, metrics, from_datetime, to_datetime):
     stats = validate_stats(stats)
