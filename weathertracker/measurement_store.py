@@ -1,6 +1,6 @@
 from   .measurement import Measurement
 import weathertracker.utils.db as db
-from   weathertracker.utils.conversion import 
+from   weathertracker.utils.conversion import convert_to_datetime
 from   werkzeug.exceptions import abort
 
 
