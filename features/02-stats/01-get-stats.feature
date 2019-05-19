@@ -104,3 +104,14 @@ Feature: Get measurement statistics
       | fromDateTime | 2015-09-02T16:00:00.000Z |
       | toDateTime   | 2015-09-02T17:00:00.000Z |
     Then the response has a status code of 400
+
+  Scenario: Get stats for a well-reported metric
+    # GET /stats?<params...>
+    When I get stats with parameters:
+      | param        | value                    |
+      | stat         | min                      |
+      | stat         | max                      |
+      | stat         | average                  |
+      | metric       | temperature              |
+      | fromDateTime | 2015-09-01T16:00:00.000Z |
+      | toDateTime   | 2015-09-01T17:00:00.000Z |
