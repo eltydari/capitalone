@@ -68,7 +68,7 @@ class Stats(object):
                 stat = {
                     "metric": metric_name,
                     "stat": stat_name,
-                    ""
+                    "value": 
                 }
 
 def get_stats(stats, metrics, from_datetime, to_datetime):
