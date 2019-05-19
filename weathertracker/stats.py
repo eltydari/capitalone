@@ -46,7 +46,6 @@ def validate_metric(metric_name, measurement):
 class Stats(object):
     def __init__(self, metrics, start_date, end_date):
         self.measurements = query_measurements(from_datetime, to_datetime)
-        self._metadata = {}
         self._aggregate_metrics(metrics)
         
     def _generate_metadata(self, metric_name):
