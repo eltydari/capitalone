@@ -27,7 +27,7 @@ Feature: Get a measurement
     Then the response has a status code of 404
 
   @new
-  Scenario: Get a measurement 
+  Scenario: Get a measurement with no m
     Given I have submitted new measurements as follows:
       | timestamp                  |
       | "2015-09-03T16:00:00.000Z" |
