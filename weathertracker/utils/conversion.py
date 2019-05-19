@@ -4,14 +4,13 @@ from werkzeug.exceptions import BadRequest
 
 class DatetimeConversionException(BadRequest):
     def __init__(self, message):
-        super().__init__(description = message)
-        self.description = message
+        se
 
 
 def convert_to_datetime(value):
     try:
         value = parse(value)
     except (ValueError, OverflowError):
-        raise DatetimeConversionException("Date input is invalid: {}".format(value))
+        raise DatetimeConversionException()
     return value
 
