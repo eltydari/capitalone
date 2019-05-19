@@ -30,7 +30,7 @@ class InvalidMetricException(Exception):
         
 class Stats(object):
     def __init__(self, start_date, end_date):
-        self.measurements 
+        self.measurements = 
 
 
 def validate_stats(stat_names):
