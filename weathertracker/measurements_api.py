@@ -35,7 +35,6 @@ class MeasurementsAPI(MethodView):
         
         metrics = {k:v for k,v in req.iteritems() if k != "timestamp"}
         add_measurement(timestamp, metrics)
-            
         
         return jsonify(message="Success!")
 
