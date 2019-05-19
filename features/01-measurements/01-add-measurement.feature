@@ -25,7 +25,7 @@ Feature: Add a measurement
     Then the response has a status code of 400
 
   @new
-  Scenario: 
+  Scenario: Cannot 
     # POST /measurements
     When I submit a new measurement as follows:
       | temperature | dewPoint | precipitation |
