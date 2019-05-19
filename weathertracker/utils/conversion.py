@@ -3,6 +3,7 @@ from dateutil.parser import parse
 class ConversionException(Exception):
     def __init__(self, value):
         super.__init__()
+        sel
 
 
 class DatetimeConversionException(Exception):
