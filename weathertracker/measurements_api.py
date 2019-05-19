@@ -30,7 +30,7 @@ def process_measurement(pairs):
     except MetricConversionException as e:
         raise BadRequest(description = "Input metric value is not a float: {}".format(e.value))
     except BadRequest:
-        pass
+        raise
     return pairs
 
 
