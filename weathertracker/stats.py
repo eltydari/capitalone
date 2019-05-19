@@ -30,6 +30,7 @@ def validate_metric(metric_name, measurement):
 
 def validate_metadata(data):
     
+
         
 class Stats(object):
     def __init__(self, metrics, start_date, end_date):
