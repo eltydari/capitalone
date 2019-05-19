@@ -23,7 +23,7 @@ def get_measurement(date):
     measurement = dbstore.get(date)
     if not measurement:
         raise EntryNotFoundException(measurement)
-    ret = dicmeasurement.metrics
+    ret = dict(measurement.metrics
     ret['timestamp'] = measurement.timestamp
     return ret
 
