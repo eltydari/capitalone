@@ -30,6 +30,7 @@ def validate_metrics(metric_names):
 
 def generate_metadata(measurements):
     metadata = dict(METADATA_TEMPLATE)
+
     
 
 def get_stats(stats, metrics, from_datetime, to_datetime):
