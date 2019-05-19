@@ -5,7 +5,6 @@ from   werkzeug.exceptions import abort
 class DatetimeConversionException(Exception):
     pass
 
-
 def add_measurement(date, metrics):
     dbstore = db.get_db()
     dbstore[date] = Measurement(date, metrics)
