@@ -5,7 +5,7 @@ from werkzeug.exceptions import BadRequest
 class DatetimeConversionException(BadRequest):
     def __init__(self, message):
         super()
-        self.description = 
+        self.description = message
 
 
 def convert_to_datetime(value):
