@@ -3,4 +3,5 @@ _db_instance = None
 def get_db():
     pass
 
-def teardown_d
+def teardown_db():
+    pas
