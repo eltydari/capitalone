@@ -7,7 +7,7 @@ from   werkzeug.exceptions import abort
 class EntryNotFoundException(Exception):
     def __init__(self, value):
         super().__init__()
-        self.e = value
+        self.entry = value
 
 
 def add_measurement(measurement):
