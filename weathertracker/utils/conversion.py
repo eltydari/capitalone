@@ -1,14 +1,15 @@
 from dateutil.parser import parse
-from werkzeug.exceptions import BadRequest
 
 
 class DatetimeConversionException(Exception):
-    pass
+    def __init__(self, value):
+        super.__init__()
+        self.value = value
 
 
 class MetricConversionException(BadRequest):
     def __init__(self, message):
-        super().__init__(description = message)
+        super.__init__
 
 
 def convert_to_datetime(value):
