@@ -40,7 +40,6 @@ class Stats(object):
         metadata["count"] = len(self.measurements)
         for measurement in self.measurements:
             if not validate_metric(metric_name, measurement):
-                return
             metric = measurement.get_metric(metric_name)
             metadata["sum"] += metric
             if metadata["min"] is None:
