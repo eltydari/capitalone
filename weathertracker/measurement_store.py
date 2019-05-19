@@ -3,7 +3,7 @@ import weathertracker.utils.db as db
 from   werkzeug.exceptions import abort
 
 
-class DatetimeConversionException(Exception):
+class Exception(Exception):
     pass
 
 
