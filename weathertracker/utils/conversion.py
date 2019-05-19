@@ -1,10 +1,8 @@
 from dateutil.parser import parse
-from werkzeug.exceptions import BadRequest
 
 
-class DatetimeConversionException(BadRequest):
-    def __init__(self, message):
-        se
+class DatetimeConversionException(Exception):
+    pass
 
 
 def convert_to_datetime(value):
