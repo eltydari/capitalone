@@ -10,7 +10,6 @@ def add_measurement(date, measurement):
 
 def get_measurement(date):
     # TODO:
-
     abort(501)
 
 
