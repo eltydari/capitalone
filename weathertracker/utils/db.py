@@ -1,6 +1,5 @@
 """
 Simple dictionary db interface that lives in process memory.
-
 Can be extended in the future to accept more types of dbs.
 
 Note: I would have renamed "utils" as "lib" but I don't think that's in scope for this test
