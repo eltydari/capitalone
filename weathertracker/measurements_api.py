@@ -20,6 +20,7 @@ def expect(key, json_dict):
     try:
         field = json_dict.get(key)
         if not field:
+            r
 
 
 class MeasurementsAPI(MethodView):
