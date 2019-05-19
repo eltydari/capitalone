@@ -1,6 +1,6 @@
 from flask import request, jsonify
 from flask.views import MethodView
-from werkzeug.exceptions import abort, BadRequest
+from werkzeug.exceptions import BadRequest
 from weathertracker.stats import get_stats
 from weathertracker.utils.conversion import (
     convert_to_datetime,
