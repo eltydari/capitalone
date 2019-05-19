@@ -25,7 +25,7 @@ class InvalidStatException(Exception):
 def validate_stats(stat_names):
     for name in stat_names:
         if name not in stats:
-            raise InvalidStatExcepti
+            raise InvalidStatException()
 
 
 def generate_metadata(measurements):
