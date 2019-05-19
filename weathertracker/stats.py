@@ -52,7 +52,7 @@ class Stats(object):
                     metadata["max"] = metric
                 elif metric > metadata["max"]:
                     metadata["max"] = metric
-        if validate_metadata(meta)
+        if validate_metadata(metadata):
         self._metadata[metric_name] = metadata
         
     def _aggregate_metrics(self, metrics):
