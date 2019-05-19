@@ -59,5 +59,5 @@ class MeasurementsAPI(MethodView):
         except mdb.EntryNotFoundException:
             raise NotFound("Entry was not found in database.")
             
-        retu Response(jsonify(measurement))
+        return Response(jsonify(measurement))
         
