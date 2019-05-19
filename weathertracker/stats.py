@@ -7,6 +7,7 @@ METRICS = {
     "max": lambda metadata: metadata[max]
 }
 
+
 def get_stats(stats, metrics, from_datetime, to_datetime):
    measurements = query_measurements(from_datetime, to_datetime)
    
