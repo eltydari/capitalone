@@ -32,7 +32,7 @@ def process_measurement(req_json):
     
 def stringify(collection):
     # Main purpose is to turn '0.0' into '0'
-    for key, value in ret_json.items():
+    for key, value in .items():
         if value == 0:
             value = 0
         ret_json[key] = str(value)
