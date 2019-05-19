@@ -2,7 +2,7 @@ from werkzeug.exceptions import abort
 from weathertracker.measurement_store import query_measurements
 
 # Registered metrics will use metadata generated within get_stats
-METRICS = {
+ = {
     "average": lambda metadata: metadata["sum"]/metadata["count"],
     "min": lambda metadata: metadata["min"],
     "max": lambda metadata: metadata["max"]
@@ -30,7 +30,7 @@ def validate_metrics(metric_names):
 
 def generate_metadata(measurements):
     metadata = dict(METADATA_TEMPLATE)
-
+    
     
 
 def get_stats(stats, metrics, from_datetime, to_datetime):
