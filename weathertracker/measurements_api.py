@@ -53,7 +53,8 @@ class MeasurementsAPI(MethodView):
     def get(self, timestamp):
 
         timestamp = parse_timestamp(timestamp)
-    
+        
+        try:
         metrics = get_measurement(timestamp)
         # TODO:
         abort(501)
