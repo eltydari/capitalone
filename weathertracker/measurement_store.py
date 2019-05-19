@@ -4,8 +4,7 @@ from   werkzeug.exceptions import abort
 
 
 def add_measurement(date, measurement):
-    # TODO:
-    abort(501)
+    
 
 
 def get_measurement(date):
