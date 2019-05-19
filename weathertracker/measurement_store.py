@@ -3,7 +3,7 @@ import .utils.db import get_db
 from   werkzeug.exceptions import abort
 
 
-def add_measurement(dmeasurement):
+def add_measurement(date, measurement):
     # TODO:
     abort(501)
 
