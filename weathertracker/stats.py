@@ -75,7 +75,7 @@ class Stats(object):
 
 def get_stats(stats, metrics, from_datetime, to_datetime):
     validate_stats(stats)
-    stats = Stats
+    stats = Stats(m)
     for metric_name in metrics:
         metric_data = generate_metadata(metric_name, measurements)
         
