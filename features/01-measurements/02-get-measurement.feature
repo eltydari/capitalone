@@ -33,5 +33,3 @@ Feature: Get a measurement
     When I get a measurement for "2015-09-03T16:20:00.000Z"
     Then the response has a status code of 200
     And the response body is:
-      | timestamp                  | temperature | dewPoint | precipitation |
-      | "2015-09-01T16:20:00.000Z" | 27.5        | 17.1     | 0             |
