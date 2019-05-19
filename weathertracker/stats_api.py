@@ -14,7 +14,6 @@ class StatsAPI(MethodView):
         stats = request.args.getlist("stat")
         print(stats)
         metrics = request.args.getlist("metric")
-        print(metrics)
         from_datetime = request.args.get("fromDateTime")
         to_datetime = request.args.get("toDateTime")
 
