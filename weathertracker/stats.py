@@ -8,4 +8,4 @@ METRICS = {
 }
 
 def get_stats(stats, metrics, from_datetime, to_datetime):
-   measurements = 
+   measurements = query_measurements()
