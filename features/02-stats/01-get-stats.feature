@@ -113,6 +113,5 @@ Feature: Get measurement statistics
       | stat         | min                      |
       | stat         | max                      |
       | stat         | average                  |
-      | metric       | temperature              |
       | fromDateTime | 2015-09-01T16:00:00.000Z |
       | toDateTime   | 2015-09-01T17:00:00.000Z |
