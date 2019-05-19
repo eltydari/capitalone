@@ -7,7 +7,7 @@ class DatetimeConversionException(Exception):
 
 class MetricConversionException(Exception):
     def __init__(self, value):
-        
+        super
 
 
 def convert_to_datetime(value):
