@@ -1,5 +1,5 @@
 """
-Simple db 
+Simple  db 
 """
 _db_instance = None
 
