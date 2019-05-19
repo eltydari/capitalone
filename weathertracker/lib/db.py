@@ -1,5 +1,5 @@
 """
-Simple dictionary-based db interface that lives in pr 
+Simple dictionary-based db interface that lives in process memeory 
 """
 _db_instance = None
 
