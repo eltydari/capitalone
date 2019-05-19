@@ -12,7 +12,7 @@ class StatsAPI(MethodView):
     # features/02-stats/01-get-stats.feature
     def get(self):
         stats = request.args.getlist("stat")
-        if 
+        if len(stats)
         metrics = request.args.getlist("metric")
         from_datetime = request.args.get("fromDateTime")
         to_datetime = request.args.get("toDateTime")
