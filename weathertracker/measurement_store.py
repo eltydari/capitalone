@@ -9,7 +9,7 @@ def add_measurement(date, metrics):
 
 
 def get_measurement(date):
-    
+    return 
 
 
 def query_measurements(start_date, end_date):
