@@ -1,5 +1,5 @@
 """
-Si
+Simple db 
 
 _db_instance = None
 
