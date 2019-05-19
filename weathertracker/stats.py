@@ -30,7 +30,7 @@ def validate_metric(metric_name, measurement):
     return False
     
 
-def validate_
+def validate_metadata
         
         
 class Stats(object):
