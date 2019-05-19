@@ -26,6 +26,7 @@ class InvalidMetricException(Exception):
         super().__init__()
         self.metric = metric
         self.timestamp = timestamp
+
         
         
 def validate_metric(metric_name, measurement):
