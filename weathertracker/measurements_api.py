@@ -17,7 +17,8 @@ def parse_timestamp(timestamp):
     return timestamp
     
 def expect(field):
-    
+    try:
+        
 
 
 class MeasurementsAPI(MethodView):
