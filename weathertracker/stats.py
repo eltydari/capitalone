@@ -62,7 +62,7 @@ class Stats(object):
                 metadata["max"] = metric
             elif metric > metadata["max"]:
                 metadata["max"] = metric
-         return metadata
+         
         
 
 
