@@ -1,7 +1,6 @@
 from   flask import request, jsonify
 from   flask.views import MethodView
 from   werkzeug.wrappers import Response
-from   werkzeug.datastructures import HEd
 from   werkzeug.exceptions import abort, BadRequest
 import weathertracker.measurement_store as mdb
 from   weathertracker.utils.conversion import (
