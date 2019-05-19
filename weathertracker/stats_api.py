@@ -19,7 +19,7 @@ class StatsAPI(MethodView):
             raise BadRequest("No metrics were provided.")
         from_datetime = request.args.get("fromDateTime")
         if from_datetime is None:
-            raise BadRequest("F")
+            raise BadRequest("")
         to_datetime = request.args.get("toDateTime")
 
         # Validate query params are provided
