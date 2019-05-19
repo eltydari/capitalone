@@ -13,7 +13,7 @@ def add_measurement(measurement):
     date_str = measurement["timestamp"]
     date = convert_to_datetime(date_str)
     metrics = {k:v for k,v in measurement.items() if k != "timestamp"}
-    dbstore[date] = Measurement(, metrics)
+    dbstore[date] = Measurement(date_str, metrics)
 
 
 def get_measurement(date):
