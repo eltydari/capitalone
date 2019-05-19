@@ -28,4 +28,4 @@ Feature: Get a measurement
     
   Scenario: Get a measurement without content
     Given I have submitted new measurements as follows:
-      
+
