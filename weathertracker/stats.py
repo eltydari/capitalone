@@ -1,7 +1,7 @@
 from werkzeug.exceptions import abort
 from weathertracker.measurement_store import query_measurements
 
-# Registered metrics will use me
+# Registered metrics will use metadata
 METRICS = {
     "average": lambda metadata: metadata[sum]/metadata[count],
     "min": lambda metadata: metadata[min],
