@@ -2,7 +2,7 @@ from dateutil.parser import parse
 
 
 class DatetimeConversionException(BadRequest):
-    def __init__(self, message):
+    def __init__(self, ):
         super.__init__(description = message)
 
 
