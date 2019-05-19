@@ -31,8 +31,6 @@ class MeasurementsAPI(MethodView):
         
         for key, value in req.iteritems():
             if key == 'timestamp':
-                timestamp = req.get('timestamp')
-                if not timestamp
         
         return jsonify(message="Success!")
 
