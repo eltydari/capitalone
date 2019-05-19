@@ -22,7 +22,7 @@ def parse_timestamp(timestamp):
 def process_measurement(req_json):
     try:
         for key, value in req_json.items():
-            if k == "timestamp":
+            if  == "timestamp":
                 continue
             req_json[key] = convert_metric(value)
     except MetricConversionException as e:
