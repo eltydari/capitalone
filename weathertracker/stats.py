@@ -22,7 +22,7 @@ def validate_metrics(metric_names):
 
 
 def generate_metadata(measurements):
-    pass
+    
 
 
 def get_stats(stats, metrics, from_datetime, to_datetime):
