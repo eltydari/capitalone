@@ -30,7 +30,7 @@ Feature: Get a measurement
     Given I have submitted new measurements as follows:
       | timestamp                  |
       | "2015-09-03T16:00:00.000Z" |
-    When I get a measurement for "2015-09-03T16:20:00.000Z"
+    When I get a measurement for 
     Then the response has a status code of 200
     And the response body is:
       | timestamp                  |
