@@ -28,6 +28,7 @@ def validate_stats(stat_names):
             raise InvalidStatException(name)
 
 
+
 def generate_metadata(measurements):
     metadata = dict(METADATA_TEMPLATE)
     
