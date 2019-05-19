@@ -28,7 +28,7 @@ class StatsAPI(MethodView):
             from_datetime = convert_to_datetime(from_datetime)
             to_datetime = convert_to_datetime(to_datetime)
         except DatetimeConversionException:
-            return abort(400)
+            
 
         stats = get_stats(stats, metrics, from_datetime, to_datetime)
         return jsonify(stats)
