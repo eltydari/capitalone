@@ -29,4 +29,4 @@ def get_measurement(date):
 def query_measurements(start_date, end_date):
     dbstore = db.get_db()
     ret = []
-    for k
+    for key, value 
