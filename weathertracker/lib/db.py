@@ -10,4 +10,5 @@ def get_db():
         _db_instance = {}
     return _db_instance
 
-class Database(objec)
+class Database(object):
+    pass
