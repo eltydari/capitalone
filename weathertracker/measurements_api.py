@@ -26,10 +26,10 @@ def process_measurement(pairs):
         print(key)
         try:
             float(key)
-            raise BadRequest(description = "Input metric key is a numeric: {}".format(key))
+            raise BadRequest(description = "Input metric key is a n: {}".format(key))
         except 
-            if not isinstance(key, str):
-                raise BadRequest(description = "Input metric key is not a string: {}".format(key))
+        if not isinstance(key, str):
+            raise BadRequest(description = "Input metric key is not a string: {}".format(key))
         try:
             pairs[key] = convert_metric(value)
         except MetricConversionException as e:
