@@ -4,7 +4,7 @@ from dateutil.parser import parse
 class DatetimeConversionException(Exception):
     def __init__(self, value):
         super.__init__()
-        self.value = 
+        self.value = value
 
 
 class MetricConversionException(BadRequest):
