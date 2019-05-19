@@ -1,8 +1,8 @@
 from dateutil.parser import parse
-from werkzeug.exceptions import 
+from werkzeug.exceptions import HTTPException
 
 
-class DatetimeConversionException(BadRequest):
+class DatetimeConversionException(HTTPException):
     def __init__(self, message):
         super()
         self.description = message
