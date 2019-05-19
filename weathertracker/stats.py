@@ -26,7 +26,13 @@ class InvalidMetricException(Exception):
         super().__init__()
         self.metric = metric
         self.timestamp = timestamp
-
+        
+        
+def validate_stats(stat_names):
+    for name in stat_names:
+        if name not in STATS:
+            raise InvalidStatException(name)
+    return stat_names
         
         
 def validate_metric(metric_name, measurement):
