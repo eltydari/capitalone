@@ -106,7 +106,7 @@ Feature: Get measurement statistics
     Then the response has a status code of 400
 
   @new
-  Scenario: Cannot get stats for missing metric
+  Scenario: Cannot get stats for missing metric input
     # GET /stats?<params...>
     When I get stats with parameters:
       | param        | value                    |
