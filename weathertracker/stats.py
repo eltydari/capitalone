@@ -40,7 +40,6 @@ class Stats(object):
     def __init__(self, start_date, end_date):
         self.measurements = query_measurements(from_datetime, to_datetime)
         self._metadata = {}
-    
         
     def _generate_metadata(self, metric_name):
         metadata = dict(METADATA_TEMPLATE)
