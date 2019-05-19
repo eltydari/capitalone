@@ -21,7 +21,7 @@ def parse_timestamp(timestamp):
 
 def process_measurement(req_json):
     try:
-        measur = {k:convert_metric(v) for k,v in req_json.items() if k != "timestamp"}
+        measurement = {k:convert_metric(v) for k,v in req_json.items() if k != "timestamp"}
     except MetricConversionException as e:
         raise BadRequest(description = "Input metric value is not a float: {}".format(e.value))
     return metrics
