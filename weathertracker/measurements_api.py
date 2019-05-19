@@ -30,7 +30,8 @@ class MeasurementsAPI(MethodView):
         req = request.get_json()
         
         timestamp = req.get('timestamp')
-        if not 
+        if not timestamp:
+            
         
         timestamp = parse_timestamp(req_details[])
         
