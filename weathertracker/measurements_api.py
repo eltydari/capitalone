@@ -51,6 +51,6 @@ class MeasurementsAPI(MethodView):
 
         timestamp = parse_timestamp(timestamp)
 
-        get_measurement(timestamp)
+        mget_measurement(timestamp)
         # TODO:
         abort(501)
