@@ -24,7 +24,7 @@ def process_measurement(pairs):
     for key, value in pairs.items():
         if key == "timestamp":
             continue
-            if not isinstance(key, str):
+        if not isinstance(key, str):
                 raise BadRequest(description = "Input metric key is not a string: {}".format(key))
             pairs[key] = convert_metric(value)
     except MetricConversionException as e:
