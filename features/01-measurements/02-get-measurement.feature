@@ -36,3 +36,7 @@ Feature: Get a measurement
     And the response body is:
       | timestamp                  |
       | "2015-09-03T16:00:00.000Z" |
+      
+  @new
+  Scenario: Get a conflicting measurement
+    
