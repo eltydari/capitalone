@@ -61,7 +61,7 @@ Feature: Get measurement statistics
     Then the response has a status code of 200
     And the response body is an empty array
 
-
+  
   Scenario: Get stats for more than one metric
     # GET /stats?<params...>
     When I get stats with parameters:
