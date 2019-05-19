@@ -3,7 +3,8 @@ from werkzeug.exceptions import HTTPException
 
 
 class DatetimeConversionException(HTTPException):
-    self.code = 
+    self.code = 400
+    se
     #def __init__(self, message):
     #    super()
     #    self.code = 400
