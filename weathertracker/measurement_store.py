@@ -1,4 +1,4 @@
-from .measurement import Measurement
+from  .measurement import Measurement
 import  .utils.db import get_db
 from werkzeug.exceptions import abort
 
