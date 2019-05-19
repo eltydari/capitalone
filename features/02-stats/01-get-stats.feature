@@ -100,7 +100,6 @@ Feature: Get measurement statistics
      # GET /stats?<params...>
     When I get stats with parameters:
       | param        | value                    |
-      | stat         | average                  |
       | metric       | precipitation            |
       | fromDateTime | 2015-09-02T16:00:00.000Z |
       | toDateTime   | 2015-09-02T17:00:00.000Z |
