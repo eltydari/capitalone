@@ -20,7 +20,6 @@ def parse_timestamp(timestamp):
     
 
 def process_measurement(pairs):
-    try:
     for key, value in pairs.items():
         if key == "timestamp":
             continue
