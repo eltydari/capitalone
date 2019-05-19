@@ -31,7 +31,7 @@ def process_measurement(req_json):
     
     
 def stringify(ret_json):
-    #Main purpose 
+    #Main purpose is to turn 0.0
 
 
 class MeasurementsAPI(MethodView):
