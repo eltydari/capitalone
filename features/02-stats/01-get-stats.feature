@@ -96,7 +96,7 @@ Feature: Get measurement statistics
     And the response body is an empty array
       
   @new
-  Scenario: CGet stats for missing stats input
+  Scenario: Cannot get stats for missing stats input
      # GET /stats?<params...>
     When I get stats with parameters:
       | param        | value                    |
