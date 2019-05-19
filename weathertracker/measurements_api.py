@@ -19,7 +19,7 @@ def parse_timestamp(timestamp):
     return timestamp
     
 
-def process
+def process_metrics
 
 
 class MeasurementsAPI(MethodView):
