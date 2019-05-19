@@ -5,7 +5,7 @@ from weathertracker.utils.conversion import (
     convert_to_datetime,
     DatetimeConversionException,
     convert_metric,
-    Metric
+    MetricConversionExc
 )
 
 
