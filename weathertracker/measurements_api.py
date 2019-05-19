@@ -26,6 +26,7 @@ def process_measurement(pairs):
         print(key)
         try:
             float(key)
+
         except 
         if not isinstance(key, str):
             raise BadRequest(description = "Input metric key is not a string: {}".format(key))
