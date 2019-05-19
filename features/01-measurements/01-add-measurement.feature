@@ -43,14 +43,6 @@ Feature: Add a measurement
     And the Location header has the path "/measurements/2015-09-01T16:00:00.000Z"
 
   @new
-  Scenario: Cannot add a measurement with arbitrary arithmetic (to support string values)
-    # POST /measurements
-    When I submit a new measurement as follows:
-      | timestamp                  | temperature | dewPoint | precipitation |
-      | "2015-09-01T16:00:00.000Z" | "15.0+12.0" | "16.7/0" | 0             |
-    Then the response has a status code of 400
-
-  @new
   Scenario: Cannot add a measurement with number as a header
     # POST /measurements
     When I submit a new measurement as follows:
