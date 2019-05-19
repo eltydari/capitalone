@@ -37,7 +37,7 @@ class MeasurementsAPI(MethodView):
         
         req = request.get_json()
         
-        timestamp = req.get("timestamp")
+        timestampS = req.get("timestamp")
         if not timestamp:
             raise BadRequest(description = "Input timestamp was expected but not provided.")
         req.timestamp = parse_timestamp(timestamp)
