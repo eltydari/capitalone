@@ -1,6 +1,6 @@
 from werkzeug.exceptions import abort
 from weathertracker.measurement_store import query_measurements
-
+from collections 
 
 # Registered metrics will use metadata generated within get_stats
 STATS = {
