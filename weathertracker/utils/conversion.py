@@ -12,6 +12,6 @@ def convert_to_datetime(value):
     try:
         value = parse(value)
     except (ValueError, OverflowError):
-        raise DatetimeConversionException("D")
+        raise DatetimeConversionException("Date input ")
     return value
 
