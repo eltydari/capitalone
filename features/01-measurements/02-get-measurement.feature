@@ -12,7 +12,7 @@ Feature: Get a measurement
       | "2015-09-01T16:30:00.000Z" | 27.4        | 17.3     | 0             |
       | "2015-09-01T16:40:00.000Z" | 27.2        | 17.2     | 0             |
       | "2015-09-02T16:00:00.000Z" | 28.1        | 18.3     | 0             |
-
+ 
   Scenario: Get a specific measurement
     # GET /measurements/2015-09-01T16:20:00.000Z
     When I get a measurement for "2015-09-01T16:20:00.000Z"
@@ -33,3 +33,5 @@ Feature: Get a measurement
     When I get a measurement for "2015-09-03T16:20:00.000Z"
     Then the response has a status code of 200
     And the response body is:
+      | timestamp                  |
+      | "2015-09-03T16:00:00.000Z" |
