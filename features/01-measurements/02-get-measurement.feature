@@ -25,7 +25,7 @@ Feature: Get a measurement
     # GET /measurements/2015-09-01T16:50:00.000Z
     When I get a measurement for "2015-09-01T16:50:00.000Z"
     Then the response has a status code of 404
-      @skip
+  @skip
   Scenario: Get a measurement without content
     Given I have submitted new measurements as follows:
       | timestamp                  |
