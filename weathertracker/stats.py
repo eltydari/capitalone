@@ -10,7 +10,7 @@ METRICS = {
 
 
 def validate_metrics(metric_names):
-    
+    for name in met
 
 
 def generate_metadata(measurements):
