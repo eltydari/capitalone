@@ -28,7 +28,7 @@ class StatsAPI(MethodView):
             from_datetime = convert_to_datetime(from_datetime)
             to_datetime = convert_to_datetime(to_datetime)
         except DatetimeConversionException:
-            raise BadRequest(description = "Timestamp input is invalid)
+            raise BadRequest(description = "Timestamp input is invalid.")
 
         stats = get_stats(stats, metrics, from_datetime, to_datetime)
         return jsonify(stats)
