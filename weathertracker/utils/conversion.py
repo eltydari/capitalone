@@ -17,3 +17,4 @@ def convert_to_float(value):
     try:
         value = float(value)
     except ValueError:
+        raise 
