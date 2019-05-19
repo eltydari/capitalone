@@ -18,7 +18,7 @@ def get_measurement(date):
     if not measurement:
         raise EntryNotFoundException
     metrics = measurement.metrics
-    metrics['timestamp'] = measur
+    metrics['timestamp'] = measurment.timestamp
     return measurement.metrics
 
 
